@@ -1,0 +1,38 @@
+{
+    "https://dx.doi.org/10.5067/GMSLM-TJ151": {
+        "Indicators": "Water Availability",
+        "Description": "The Global Mean Sea Level Trend dataset contains the Global Mean Sea Level (GMSL) trend generated from the Integrated Multi-Mission Ocean Altimeter Data for Climate Research. The GMSL trend is a 1-dimensional time series of globally averaged Sea Surface Height Anomalies (SSHA) from TOPEX/Poseidon, Jason-1, OSTM/Jason-2, and Jason-3 that covers September 1992 to present with a lag of up to 4 months. The data are reported as variations relative to a 20-year TOPEX/Jason collinear mean. Bias adjustments and cross-calibrations were applied to ensure SSHA data are consistent across the missions. Glacial Isostatic Adjustment (GIA) was also applied. The data are available as a table in ASCII format.",
+        "Geographic_Coverage": "Global",
+        "Format": "ASCII",
+        "Spatial_Resolution": "1.32 degrees",
+        "Temporal_Resolution": "Weekly - < Monthly",
+        "Temporal_Extent": "1992-09-01 to Present",
+        "Latency": "4 months",
+        "Project": "MEaSUREs - Making Earth Science Data Records for Use in Research Environments",
+        "Data_Visualization": true
+    },
+    "https://cmr.earthdata.nasa.gov/search/concepts/C2157848116-PODAAC.html": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The MOPITT (Measurements of Pollution in the Troposphere) product provides data on carbon monoxide (CO) and methane (CH4) in the troposphere. These data can be used to monitor air quality and pollution levels.",
+        "Geographic_Coverage": "Global",
+        "Format": "HDF-EOS5",
+        "Spatial_Resolution": "Varies",
+        "Temporal_Resolution": "Daily",
+        "Temporal_Extent": "2000-06-30 to Present",
+        "Latency": "3 months",
+        "Project": "MOPITT",
+        "Data_Visualization": true
+    },
+    "https://cmr.earthdata.nasa.gov/search/concepts/C2205556193-POCLOUD.html": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The MOPITT (Measurements of Pollution in the Troposphere) product provides data on carbon monoxide (CO) and methane (CH4) in the troposphere. These data can be used to monitor air quality and pollution levels.",
+        "Geographic_Coverage": "Global",
+        "Format": "HDF-EOS5",
+        "Spatial_Resolution": "Varies",
+        "Temporal_Resolution": "Daily",
+        "Temporal_Extent": "2000-06-30 to Present",
+        "Latency": "3 months",
+        "Project": "MOPITT",
+        "Data_Visualization": true
+    }
+}

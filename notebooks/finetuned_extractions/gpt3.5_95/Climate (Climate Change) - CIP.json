@@ -1,0 +1,50 @@
+{
+    "https://search.earthdata.nasa.gov/search?m=-97.681640625!-20.25439453125!0!1!0!0%2C2&q=AIRS3ST&ok=AIRS3ST&fi=AIRS&fst0=Atmosphere&fs10=Tropospheric%20Ozone&fst1=Atmosphere&fst2=Atmosphere": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The MODIS Atmosphere L2G Nitrogen Dioxide (NRT) product provides nitrogen dioxide data from the Terra and Aqua satellites. These data may aid in air quality research.",
+        "Geographic_Coverage": "Global",
+        "Format": "HDF-EOS5",
+        "Spatial_Resolution": "0.1 degrees",
+        "Temporal_Resolution": "NRT",
+        "Temporal_Extent": "2021-08-01 to present",
+        "Latency": "NRT",
+        "Project": "Environmental Justice Viewer",
+        "Data_Visualization": true
+    },
+    "https://search.earthdata.nasa.gov/search?m=-0.0703125!0.140625!2!1!0!0%2C2&q=OMTO3&ok=OMTO3&fi=OMI&fst0=Atmosphere&fsm0=Air%20Quality&fs10=Tropospheric%20Ozone&fst1=Atmosphere&fst2=Atmosphere": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The MODIS Atmosphere L2G Nitrogen Dioxide (NRT) product provides nitrogen dioxide data over the United States. These data may aid in air quality research.",
+        "Geographic_Coverage": "United States",
+        "Format": "HDF4",
+        "Spatial_Resolution": "~10 km",
+        "Temporal_Resolution": "NRT",
+        "Temporal_Extent": "2022-01-01 to present",
+        "Latency": "NRT",
+        "Project": "Environmental Justice",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.5067/FIRMS/VIIRS/VJ114IMGT_NRT.002": {
+        "Indicators": "Disasters",
+        "Description": "The VJ114IMGTDL_NRT dataset provides NOAA-20 (formerly JPSS-1) VIIRS I Band 375 m Active Fire Product NRT Vector data. These data may aid in tracking fires and aid in disaster response and recovery research.",
+        "Geographic_Coverage": "Global",
+        "Format": "TXT, SHP, KML, WMS",
+        "Spatial_Resolution": "375 m",
+        "Temporal_Resolution": "NRT",
+        "Temporal_Extent": "2020-01-01 to present",
+        "Latency": "~ 3 hours",
+        "Project": "LANCE - Land, Atmosphere Near real-time Capability for Earth",
+        "Data_Visualization": true
+    },
+    "https://search.earthdata.nasa.gov/search?fi=TROPOMI&fst0=Atmosphere&fsm0=Air%20Quality&fs10=Tropospheric%20Ozone": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The MODIS Atmosphere L2G Nitrogen Dioxide (NRT) product provides nitrogen dioxide data from the Terra and Aqua satellites. These data may aid in air quality research.",
+        "Geographic_Coverage": "Global",
+        "Format": "HDF-EOS5",
+        "Spatial_Resolution": "0.1 degrees",
+        "Temporal_Resolution": "NRT",
+        "Temporal_Extent": "2021-08-01 to present",
+        "Latency": "NRT",
+        "Project": "Environmental Justice Viewer",
+        "Data_Visualization": true
+    }
+}

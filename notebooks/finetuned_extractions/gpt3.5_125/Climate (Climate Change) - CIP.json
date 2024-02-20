@@ -1,0 +1,14 @@
+{
+    "https://search.earthdata.nasa.gov/search?fi=TROPOMI&fst0=Atmosphere&fsm0=Air%20Quality&fs10=Tropospheric%20Ozone": {
+        "Indicators": "Health & Air Quality",
+        "Description": "This link provides access to the OMI OMSO2 data in Earthdata Search. Earthdata Search is a web-based application for discovering, filtering, and ordering Earth science data. The data may aid in air quality research.",
+        "Geographic_Coverage": "Global",
+        "Format": "Varies",
+        "Spatial_Resolution": "Varies",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "Varies",
+        "Latency": "Varies",
+        "Project": "Aura - Earth Observing System (EOS), Aura",
+        "Data_Visualization": true
+    }
+}

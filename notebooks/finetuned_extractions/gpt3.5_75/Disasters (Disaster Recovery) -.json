@@ -1,0 +1,73 @@
+{
+    "https://doi.org/10.7927/H4WS8R5B": {
+        "Indicators": "Disasters",
+        "Description": "The Global Multihazard Proportional Economic Loss Risk Deciles shows areas at greater risk of economic loss from multiple hazards. These hazards include drought, earthquakes, landslides, tropical cyclones, and volcanic eruptions. These data can aid in natural disaster preparedness and recovery research.",
+        "Geographic_Coverage": "Global",
+        "Format": "ASCII, PDF, PNG, WMS",
+        "Spatial_Resolution": "0.25 degrees",
+        "Temporal_Resolution": "N/A",
+        "Temporal_Extent": "2000-01-01 to 2000-12-31",
+        "Latency": "N/A",
+        "Project": "NDH - Natural Disaster Hotspots",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/H4S180F9": {
+        "Indicators": "Disasters",
+        "Description": "The Global Multihazard Total Economic Loss Risk Deciles shows areas at greater risk of economic loss from multiple natural hazards. The dataset includes information on areas at risk for cyclones, droughts, earthquakes, floods, landslides, and volcanoes.",
+        "Geographic_Coverage": "Global",
+        "Format": "ASCII, PDF, PNG, WMS",
+        "Spatial_Resolution": "0.0417 degrees",
+        "Temporal_Resolution": "1 minute",
+        "Temporal_Extent": "2000-01-01 to 2000-12-31",
+        "Latency": "NRT",
+        "Project": "NDH - Natural Disaster Hotspots",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/H4668B3D": {
+        "Indicators": "Disasters",
+        "Description": "The Global Flood Hazard Frequency and Distribution shows areas with a higher frequency of flooding. These data can aid in storm preparation and recovery.",
+        "Geographic_Coverage": "Global",
+        "Format": "ASCII, PDF, PNG, WMS",
+        "Spatial_Resolution": "0.5 degrees",
+        "Temporal_Resolution": "1985-01-01 to 2003-12-31",
+        "Latency": "(NRT) - Near Real Time",
+        "Project": "NDH - Natural Disaster Hotspots",
+        "Data_Visualization": true
+    },
+    "https://dx.doi.org/10.7927/9ryj-6467": {
+        "Indicators": "Human Dimensions",
+        "Description": "The VIIRS Plus DMSP Change in Lights VIIRS-DMSP dLIGHT v1 dataset shows changes in brightness and extent of global nighttime lights networks over two decades. These data may aid in urbanization research.",
+        "Geographic_Coverage": "Global",
+        "Format": "GeoTIFF",
+        "Spatial_Resolution": "0.01 degrees",
+        "Temporal_Resolution": "1992, 2002, 2013",
+        "Temporal_Extent": "1992-01-01 to 2013-12-31",
+        "Latency": "NRT",
+        "Project": "SedacView - SEDAC",
+        "Data_Visualization": true
+    },
+    "https://dx.doi.org/10.7927/d1x1-d702": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Urban-Rural Population and Land Area Estimates dataset provides estimates of urban and rural populations and land areas for the years 1990, 2000, and 2015 for 234 countries and areas with a coastline that is less than or equal to 5 meters above sea level. These data may be useful in coastal hazard and environmental justice research.",
+        "Geographic_Coverage": "Global",
+        "Format": "GeoTIFF, PDF, PNG, CSV",
+        "Spatial_Resolution": "30 arc-seconds",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "1990-01-01 to 2015-12-31",
+        "Latency": "Varies",
+        "Project": "LECZ - Low Elevation Coastal Zone",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/d1x1-d702": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Urban-Rural Population and Land Area Estimates dataset provides estimates of urban and rural populations and land areas for the years 1990, 2000, and 2015 for 234 countries and areas with a contiguous coastal elevation of 5 meters (m) or less. These data may be useful in urban and rural population comparative analysis.",
+        "Geographic_Coverage": "Global",
+        "Format": "GeoTIFF, PDF, PNG, CSV",
+        "Spatial_Resolution": "0.25 decimal degrees",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "1990-01-01 to 2015-12-31",
+        "Latency": "Varies",
+        "Project": "LECZ - Low Elevation Coastal Zone",
+        "Data_Visualization": true
+    }
+}

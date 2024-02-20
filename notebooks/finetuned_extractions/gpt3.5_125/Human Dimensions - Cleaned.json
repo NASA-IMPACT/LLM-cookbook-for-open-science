@@ -1,0 +1,86 @@
+{
+    "https://doi.org/10.7927/H4WM1BB7": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Socioeconomic Baseline Data dataset provides a baseline dataset for evaluating climate change impacts. Data includes population, human development, economic, water resources, land cover, land use, agriculture, food, energy, and biodiversity data.",
+        "Geographic_Coverage": "Global",
+        "Format": "CSV",
+        "Spatial_Resolution": "1 degree",
+        "Temporal_Resolution": "1 year",
+        "Temporal_Extent": "1980-01-01 to 1995-12-31",
+        "Latency": "NRT",
+        "Project": "IPCC - Intergovernmental Panel on Climate Change",
+        "Data_Visualization": false
+    },
+    "https://doi.org/10.7927/yzp7-sm30": {
+        "Indicators": "Human Dimensions",
+        "Description": "The INFORM (Integrated Network for Societal Conflict and Human Security) Global Risk Index identifies countries at high risk of humanitarian crisis. This dataset may aid in climate change research.",
+        "Geographic_Coverage": "Global",
+        "Format": "CSV",
+        "Spatial_Resolution": "1 degree",
+        "Temporal_Resolution": "Yearly",
+        "Temporal_Extent": "2019-01-01 to 2019-12-31",
+        "Latency": "1 year",
+        "Project": "IPCC - Intergovernmental Panel on Climate Change",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/5bbs-e174": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Natural Resource Protection Indicator (NRPI) and Child Health Indicator (CHI) are based on proximity-to-target scores, ranging from 0 (low) to 100 (high) at target. The NRPI covers 135 countries and is calculated based on the weighted average percentage of biomes under protected status. The CHI is a composite index for 194 countries, derived from the average of three proximity-to-target scores for access to at least basic water and sanitation, along with child mortality.",
+        "Geographic_Coverage": "Global",
+        "Format": "CSV",
+        "Spatial_Resolution": "0.1 degrees",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "2017-01-01 to 2021-12-31",
+        "Latency": "Varies",
+        "Project": "NRMI - Natural Resource Management Index",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/k9t6-gh59": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Global Development Potential Indices (DPIs) dataset provides land suitability rankings for various sectors related to renewable energy, fossil fuels, mining, and agriculture. These data may aid in identifying areas suitable for development and conservation.",
+        "Geographic_Coverage": "Global",
+        "Format": "GeoTIFF",
+        "Spatial_Resolution": "0.0083 degrees",
+        "Temporal_Resolution": "N/A",
+        "Temporal_Extent": "2016-01-01 to 2016-12-31",
+        "Latency": "N/A",
+        "Project": "GDP - Global Development Potential Indices",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/H4K64G12": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The Global Subnational Prevalence of Child Malnutrition dataset provides information on the prevalence of underweight children. This may be an important dataset to include in research related to environmental justice, poverty, and public health.",
+        "Geographic_Coverage": "Global",
+        "Format": "Shapefile, Raster, PDF",
+        "Spatial_Resolution": "0.008333 Decimal Degrees",
+        "Temporal_Resolution": "N/A",
+        "Temporal_Extent": "1990-01-01 to 2002-12-31",
+        "Latency": "N/A",
+        "Project": "PMP - Poverty Mapping Project",
+        "Data_Visualization": true
+    },
+    "https://dx.doi.org/10.7927/H45X26V8": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Unsatisfied Basic Needs dataset provides measures of household well-being and access to basic needs (such as housing conditions, water, electricity, sanitation, education, and employment) for various countries in Latin America. These data may be useful in poverty and inequality research.",
+        "Geographic_Coverage": "Argentina, Bolivia, Brazil, Colombia, Ecuador, El Salvador, Guatemala, Honduras, Mexico, Nicaragua, Peru",
+        "Format": "CSV, Shapefile",
+        "Spatial_Resolution": "0.0083 degrees",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "1998-01-01 to 2001-12-31",
+        "Latency": "Varies",
+        "Project": "PMP - Poverty Mapping Project",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/H4PZ56R2": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Global Subnational Infant Mortality Rates from the Poverty Mapping Project provides a global subnational map of infant mortality rate estimates. These data may aid in interdisciplinary studies of health, poverty, and the environment.",
+        "Geographic_Coverage": "Global",
+        "Format": "Shapefile, PDF, PNG",
+        "Spatial_Resolution": "0.083333 Decimal Degrees",
+        "Temporal_Resolution": "N/A",
+        "Temporal_Extent": "2000-01-01 to 2000-12-31",
+        "Latency": "N/A",
+        "Project": "PMP - Poverty Mapping Project",
+        "Data_Visualization": true
+    }
+}

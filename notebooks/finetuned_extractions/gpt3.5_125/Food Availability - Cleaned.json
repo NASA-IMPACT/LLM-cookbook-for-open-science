@@ -1,0 +1,26 @@
+{
+    "https://doi.org/10.7927/np6p-qe61": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Urban Extent Polygons shows the urban areas represented in the Global Rural-Urban Mapping Project, Version 1 (GRUMPv1) dataset. It includes urban areas and provides an estimate of the urban population.",
+        "Geographic_Coverage": "Global",
+        "Format": "Shapefile",
+        "Spatial_Resolution": "Varies",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "1995",
+        "Latency": "Varies",
+        "Project": "GRUMP - Global Rural-Urban Mapping Project",
+        "Data_Visualization": true
+    },
+    "https://dx.doi.org/10.7927/dv72-s254": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Georeferenced U.S. County-Level Population Projections by Age, Sex, Race, and Hispanic Origin, 2020-2100 dataset provides population projections based on different scenarios related to climate change, socioeconomic development, and other factors. These data may aid in demographic research and policy-making.",
+        "Geographic_Coverage": "United States",
+        "Format": "Shapefile",
+        "Spatial_Resolution": "0.000269 (Latitude and Longitude)",
+        "Temporal_Resolution": "N/A",
+        "Temporal_Extent": "2020-01-01 to 2100-12-31",
+        "Latency": "N/A",
+        "Project": "POPDYNAMICS - Population Dynamics",
+        "Data_Visualization": true
+    }
+}

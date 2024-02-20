@@ -1,0 +1,74 @@
+{
+    "https://doi.org/10.5067/MEaSUREs/GFSAD/GFSAD30AUNZCNMOCE.001": {
+        "Indicators": "Food Availability",
+        "Description": "The Global Food Security-support Analysis Data (GFSAD) Cropland Extent 2015: Australia, New Zealand, China, Mongolia dataset provides cropland extent data over Australia, New Zealand, China, and Mongolia for the nominal year 2015 at 30-meter resolution. These data may be useful in agricultural cropland studies pertaining to water sustainability and food security.",
+        "Geographic_Coverage": "Australia, New Zealand, China, Mongolia",
+        "Format": "GeoTIFF",
+        "Spatial_Resolution": "30m",
+        "Temporal_Resolution": "Multi-Year",
+        "Temporal_Extent": "2013-01-01 to 2016-12-31",
+        "Latency": "1-3 months",
+        "Project": "MEaSUREs - Making Earth System Data Records for Use in Research Environments",
+        "Data_Visualization": false
+    },
+    "https://doi.org/10.5067/MEaSUREs/GFSAD/GFSAD30SEACE.001": {
+        "Indicators": "Food Availability",
+        "Description": "The Global Food Security-support Analysis Data (GFSAD) Cropland Extent 2015 Southeast and Northeast Asia 30 m V001 dataset provides cropland extent data over Southeast and Northeast Asia for the nominal year 2015 at 30-meter resolution. These data are critical for policy-making and provide important baseline data that are used in many agricultural cropland studies pertaining to water sustainability and food security.",
+        "Geographic_Coverage": "Southeast and Northeast Asia",
+        "Format": "GeoTIFF",
+        "Spatial_Resolution": "30m",
+        "Temporal_Resolution": "Multi-Year",
+        "Temporal_Extent": "2013-01-01 to 2016-12-31",
+        "Latency": "1-3 months",
+        "Project": "MEaSUREs - Making Earth System Data Records for Use in Research Environments",
+        "Data_Visualization": false
+    },
+    "https://doi.org/10.5067/MEaSUREs/GFSAD/GFSAD30EUCEARUMECE.001": {
+        "Indicators": "Food Availability",
+        "Description": "The Global Food Security-support Analysis Data (GFSAD) Cropland Extent 2015 Europe, Central Asia, Russia, Middle East dataset provides cropland extent data over Europe, Central Asia, Russia, and the Middle East for the nominal year 2015 at 30-meter resolution. These data may be useful in food availability research.",
+        "Geographic_Coverage": "Europe, Central Asia, Russia, Middle East",
+        "Format": "GeoTIFF",
+        "Spatial_Resolution": "30m",
+        "Temporal_Resolution": "Multi-Year",
+        "Temporal_Extent": "2013-01-01 to 2016-12-31",
+        "Latency": "1-3 months",
+        "Project": "MEaSUREs - Making Earth System Data Records for Use in Research Environments",
+        "Data_Visualization": false
+    },
+    "https://doi.org/10.5067/MEaSUREs/GFSAD/GFSAD30SACE.001": {
+        "Indicators": "Food Availability",
+        "Description": "The Global Food Security-support Analysis Data (GFSAD) Cropland Extent 2015 South America 30 m V001 dataset provides cropland extent data over South America for the nominal year 2015 at 30-meter resolution. These data may be useful in agricultural cropland studies pertaining to water sustainability and food security.",
+        "Geographic_Coverage": "South America",
+        "Format": "GeoTIFF",
+        "Spatial_Resolution": "30m",
+        "Temporal_Resolution": "Multi-Year",
+        "Temporal_Extent": "2013-01-01 to 2016-12-31",
+        "Latency": "1-3 months",
+        "Project": "MEaSUREs - Making Earth System Data Records for Use in Research Environments",
+        "Data_Visualization": false
+    },
+    "https://fews.net/": {
+        "Indicators": "Food Availability",
+        "Description": "The Famine Early Warning Systems Network (FEWS NET) is a leading provider of early warning and analysis on acute food insecurity around the world. The FEWS NET - Acute Food Insecurity Data dataset provides information on acute food insecurity, which refers to rapid-onset or short-term food insecurity of an extent that merits emergency response. The severity of acute food insecurity is defined by assessing the degree to which households can meet basic survival needs and maintain normal livelihoods. The dataset includes the Integrated Food Security Phase Classification (IPC) phases, which represent FEWS NET's analysis of the most likely acute food insecurity outcomes for near-term (4 months into the future) and medium-term (8 months into the future) projection periods. The dataset also includes FEWS NET classifications, which are IPC-compatible. IPC-compatible analysis follow all IPC methodological protocols but do not necessarily reflect the consensus of national food security partners. The dataset covers countries in Africa, Central America, and the Middle East and Asia. It is available in geotiff format. ",
+        "Geographic_Coverage": "Africa, Central America, Middle East, Asia",
+        "Format": "Geotiff",
+        "Spatial_Resolution": "Varies",
+        "Temporal_Resolution": "Vaires",
+        "Temporal_Extent": "Varies",
+        "Latency": "1-2 months",
+        "Project": "FEWS NET - Food Security Monitoring",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/H4HH6H08": {
+        "Indicators": "Water Availability",
+        "Description": "The Global Reservoir and Dam Database, Version 1, Revision 01 (v1.01) dataset contains 6,862 records of reservoirs and their associated dams with a cumulative storage capacity of 6,197 cubic km. The dataset was created to provide a geographically explicit and reliable database of reservoirs for the scientific community. The dataset may be useful in water availability research.",
+        "Geographic_Coverage": "Global",
+        "Format": "Shapefile",
+        "Spatial_Resolution": "Varies",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "2011-2011",
+        "Latency": "Varies",
+        "Project": "Other",
+        "Data_Visualization": false
+    }
+}

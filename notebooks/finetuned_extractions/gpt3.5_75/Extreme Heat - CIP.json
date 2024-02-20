@@ -1,0 +1,86 @@
+{
+    "https://search.earthdata.nasa.gov/search?q=VNP21&fi=VIIRS": {
+        "Indicators": "Disasters",
+        "Description": "The Earthdata Search Disaster Dashboard is a collection of near real-time imagery and data products from NASA and other agencies that may be useful in monitoring, preparing for, and responding to natural disasters such as hurricanes, flooding, and wildfires. The dashboard is a customized search interface within Earthdata Search that allows users to search, discover, visualize, and access data from multiple datasets in support of disaster research and response.",
+        "Geographic_Coverage": "Global",
+        "Format": "varies",
+        "Spatial_Resolution": "varies",
+        "Temporal_Resolution": "varies",
+        "Temporal_Extent": "varies",
+        "Latency": "NRT",
+        "Project": "Disaster Dashboard",
+        "Data_Visualization": true
+    },
+    "https://search.earthdata.nasa.gov/search?q=VNP21": {
+        "Indicators": "Disasters",
+        "Description": "The Earthdata Search Disaster Dashboard is a collection of near real-time imagery and data products from NASA and other agencies that may be useful for monitoring, responding to, and researching natural and man-made disasters. The dashboard is a subset of the larger Earthdata Search collection.",
+        "Geographic_Coverage": "Global",
+        "Format": "varies",
+        "Spatial_Resolution": "varies",
+        "Temporal_Resolution": "varies",
+        "Temporal_Extent": "varies",
+        "Latency": "varies",
+        "Project": "Earthdata Search",
+        "Data_Visualization": true
+    },
+    "https://dx.doi.org/10.5067/ASTER/AST_08.003": {
+        "Indicators": "Extreme Heat",
+        "Description": "The LP DAAC ASTER L2 Surface Kinetic Temperature product contains surface temperatures at 90 m spatial resolution for land areas. Surface kinetic temperature provides a vital input to studies of volcanism, thermal inertia, surface energy, and high-resolution mapping of fires.",
+        "Geographic_Coverage": "Global",
+        "Format": "HDF-EOS2",
+        "Spatial_Resolution": "90m",
+        "Temporal_Resolution": "1 minute",
+        "Temporal_Extent": "2000-03-04 to Present",
+        "Latency": "NRT",
+        "Project": "N/A",
+        "Data_Visualization": false
+    },
+    "https://dx.doi.org/10.5067/ECOSTRESS/ECO2LSTE.001": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The ECO2LSTE (ECOSTRESS Land Surface Temperature and Emissivity) product provides land surface temperature and emissivity data. These data may aid in monitoring urban heat and air quality. The ECO2LSTE product may be useful in air quality, extreme heat, and health vulnerability and adaptation studies.",
+        "Geographic_Coverage": "United States",
+        "Format": "HDF-EOS5",
+        "Spatial_Resolution": "70m x 70m",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "2018-07-09 to Present",
+        "Latency": "NRT",
+        "Project": "EJSCREEN",
+        "Data_Visualization": true
+    },
+    "https://dx.doi.org/10.5067/ECOSTRESS/ECO2CLD.001": {
+        "Indicators": "Food Availability",
+        "Description": "The ECOSTRESS Cloud Mask Daily L2 Global dataset provides a cloud mask that can be used to determine cloud cover for the ECO1B_RA_D ECO2LSTE, ECO3_ETPT-JPL, ECO4_ESIPT-JPL, and ECO4_WUE data products. These data may aid in food availability and crop health research.",
+        "Geographic_Coverage": "Global",
+        "Format": "HDF5",
+        "Spatial_Resolution": "70m x 70m",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "2018-07-09 to Present",
+        "Latency": "NRT",
+        "Project": "ECO - ECOSTRESS",
+        "Data_Visualization": false
+    },
+    "https://dx.doi.org/10.5067/QLW535AYJ498": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The MOPITT (Measurements of Pollution in the Troposphere) dataset provides daily global carbon monoxide (CO) measurements. Carbon monoxide is a pollutant that can have harmful effects on human health, including reducing the amount of oxygen that can be transported in the bloodstream to critical organs like the heart and brain.",
+        "Geographic_Coverage": "Global",
+        "Format": "HDF-EOS2, HDF-EOS5",
+        "Spatial_Resolution": "22 km x 22 km at nadir",
+        "Temporal_Resolution": "1 minute",
+        "Temporal_Extent": "2000-12-31 to Present",
+        "Latency": "NRT",
+        "Project": "Aura - Earth Observing System (EOS), Aura",
+        "Data_Visualization": true
+    },
+    "https://search.earthdata.nasa.gov/search?q=AIRX3std": {
+        "Indicators": "Disasters",
+        "Description": "The Earthdata Search Disaster Dashboard is a collection of near real-time imagery and data products from NASA and other agencies that may be useful for monitoring, responding to, and researching natural and man-made disasters. The dashboard is a subset of the larger Earthdata Search collection.",
+        "Geographic_Coverage": "Global",
+        "Format": "varies",
+        "Spatial_Resolution": "varies",
+        "Temporal_Resolution": "varies",
+        "Temporal_Extent": "varies",
+        "Latency": "varies",
+        "Project": "Earthdata Search",
+        "Data_Visualization": true
+    }
+}

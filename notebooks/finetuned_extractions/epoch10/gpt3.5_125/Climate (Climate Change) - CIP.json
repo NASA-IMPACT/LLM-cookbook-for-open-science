@@ -1,0 +1,14 @@
+{
+    "https://search.earthdata.nasa.gov/search?fi=TROPOMI&fst0=Atmosphere&fsm0=Air%20Quality&fs10=Tropospheric%20Ozone": {
+        "Indicators": "Health & Air Quality",
+        "Description": "The VIIRS AOD at 6km from Earthdata Search dataset provides an important air quality record.",
+        "Geographic_Coverage": "Global",
+        "Format": "NetCDF",
+        "Spatial_Resolution": "6 degrees",
+        "Temporal_Resolution": "Daily",
+        "Temporal_Extent": "2012 ongoing",
+        "Latency": "NRT",
+        "Project": "Environmental Health",
+        "Data_Visualization": true
+    }
+}

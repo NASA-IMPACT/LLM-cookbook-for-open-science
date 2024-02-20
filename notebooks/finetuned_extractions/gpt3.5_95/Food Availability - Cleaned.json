@@ -1,0 +1,38 @@
+{
+    "https://doi.org/10.7927/np6p-qe61": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Urban Extent Polygons dataset provides a polygon representation of urban areas with city or agglomeration name and time series population estimates. These data are useful in urbanization and land use research.",
+        "Geographic_Coverage": "Global",
+        "Format": "Shapefile",
+        "Spatial_Resolution": "Varies",
+        "Temporal_Resolution": "Varies",
+        "Temporal_Extent": "1995-01-01 to 1995-12-31",
+        "Latency": "NRT",
+        "Project": "GRUMP",
+        "Data_Visualization": true
+    },
+    "https://dx.doi.org/10.7927/dv72-s254": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Georeferenced U.S. County-Level Population Projections Total and by Sex, Race, and Age Based on the SSPs (v1) (2020\u200a-\u200a2100) dataset provides county-level population projections by age, sex, and race. These data may aid in urban and rural demographic change research.",
+        "Geographic_Coverage": "United States",
+        "Format": "Shapefile",
+        "Spatial_Resolution": "0.000269 x 0.000179 degrees",
+        "Temporal_Resolution": "N/A",
+        "Temporal_Extent": "2020-01-01 to 2100-12-31",
+        "Latency": "N/A",
+        "Project": "POPDYNAMICS - SEDAC Population Dynamics",
+        "Data_Visualization": true
+    },
+    "https://doi.org/10.7927/3xxe-ap97": {
+        "Indicators": "Human Dimensions",
+        "Description": "The Global Gridded Relative Deprivation Index (GRDI), Version 1 (GRDIv1) dataset characterizes the relative levels of multidimensional deprivation and poverty in each 30 arc-second (~1 km) pixel, where a value of 100 represents the highest level of deprivation and a value of 0 the lowest. GRDIv1 is built from socio-demographic and satellite data inputs that were spatially harmonized, indexed, and weighted into six main components to produce the final index raster. Inputs were selected from the best-available data that either continuously vary across space or have at least administrative level 1 (provincial/state) resolution and which have global spatial coverage.",
+        "Geographic_Coverage": "Global",
+        "Format": "GeoTIFF",
+        "Spatial_Resolution": "1 kilometer",
+        "Temporal_Resolution": "N/A",
+        "Temporal_Extent": "2010-01-01 to 2020-12-31",
+        "Latency": "N/A",
+        "Project": "POVERTY - Poverty Mapping",
+        "Data_Visualization": true
+    }
+}
