@@ -103,6 +103,11 @@ Full Use requires using combination of these approaches
 
 ### 4.1 LangChain Overview
 
+  LangFlow is a tool designed for rapid experimentation and prototyping with LangChain, providing a graphical user interface (GUI) that utilizes react-flow technology. It offers a drag-and-drop feature for easy prototyping and a built-in chat interface for real-time interaction. LangFlow allows users to edit prompt parameters, create chains and agents, track thought processes, and export flows. This modular and interactive design aims to foster creativity and streamline the creation process for dynamic graphs where each node is an executable unit​.
+
+
+
+
 ### 4.2 LangChain Examples and Templates
 
 - Example 1
