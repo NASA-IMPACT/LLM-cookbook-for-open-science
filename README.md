@@ -1,33 +1,34 @@
 # Table of Contents
 
-- [1. Introduction](#1-introduction)
-  - [1.1 Use of LLMs in NASA SMD](#11-use-of-llms-in-nasa-smd)
-    - [Goals](#goals)
-    - [Assumptions](#assumptions)
-  - [1.2 Infrastructure](#12-infrastructure)
-  - [1.3 Ethics Reminder](#13-ethics-reminder)
-- [2. How to Use LLM for Individual Tasks (Target audience: Everyone)](#2-how-to-use-llm-for-individual-tasks-target-audience-everyone)
-  - [2.1 Prompt Engineering](#21-prompt-engineering)
-  - [2.2 Typical Uses of Generative LLMs](#22-typical-uses-of-generative-llms)
-  - [2.3 Modifying Model Behavior](#23-modifying-model-behavior)
-  - [2.4 Prompt Pattern](#24-prompt-pattern)
-  - [2.5 Best Practices/Guard Rails](#25-best-practicesguard-rails)
-  - [2.6 Closing Thoughts](#26-closing-thoughts)
-- [3. Creating Quick App Prototypes (Target audience: Everyone)](#3-creating-quick-app-prototypes-target-audience-everyone)
-  - [3.1 Lang Flow Overview](#31-lang-flow-overview)
-  - [3.2 Lang Flow Examples and Templates](#32-lang-flow-examples-and-templates)
-- [4. Creating and Deploying AI App (Target audience: Developers)](#4-creating-and-deploying-ai-app-target-audience-developers)
-  - [4.1 LangChain Overview](#41-langchain-overview)
-  - [4.2 LangChain Examples and Templates](#42-langchain-examples-and-templates)
-  - [4.3 Evaluation](#43-evaluation)
-  - [4.4 Deployment](#44-deployment)
-  - [4.5 Best Practices](#45-best-practices)
-- [5. Fine Tuning LM to create custom AI App (Target audience: ML Engineers)](#5-fine-tuning-lm-to-create-custom-ai-app-target-audience-ml-engineers)
-  - [5.1 Training Data](#51-training-data)
-  - [5.2 Fine Tuning the Model](#52-fine-tuning-the-model)
-  - [5.3 Optimization](#53-optimization)
-  - [5.4 Deployment](#54-deployment)
-  - [5.5 Best Practices](#55-best-practices)
+- [Table of Contents](#table-of-contents)
+  - [1. Introduction](#1-introduction)
+    - [1.1 Use of LLMs in NASA SMD](#11-use-of-llms-in-nasa-smd)
+      - [Goals](#goals)
+      - [Assumptions](#assumptions)
+    - [1.2 Infrastructure](#12-infrastructure)
+    - [1.3 Ethics Reminder](#13-ethics-reminder)
+  - [2. How to Use LLM for Individual Tasks (Target audience: Everyone)](#2-how-to-use-llm-for-individual-tasks-target-audience-everyone)
+    - [2.1 Prompt Engineering](#21-prompt-engineering)
+    - [2.2 Typical Uses of Generative LLMs](#22-typical-uses-of-generative-llms)
+    - [2.3 Modifying Model Behavior](#23-modifying-model-behavior)
+    - [2.4 Prompt Pattern](#24-prompt-pattern)
+    - [2.5 Best Practices/Guard Rails](#25-best-practicesguard-rails)
+    - [2.6 Closing Thoughts](#26-closing-thoughts)
+  - [3. Creating Quick App Prototypes (Target audience: Everyone)](#3-creating-quick-app-prototypes-target-audience-everyone)
+    - [3.1 Lang Flow Overview](#31-lang-flow-overview)
+    - [3.2 Lang Flow Examples and Templates](#32-lang-flow-examples-and-templates)
+  - [4. Creating and Deploying AI App (Target audience: Developers)](#4-creating-and-deploying-ai-app-target-audience-developers)
+    - [4.1 LangChain Overview](#41-langchain-overview)
+    - [4.2 LangChain Examples and Templates](#42-langchain-examples-and-templates)
+    - [4.3 Evaluation](#43-evaluation)
+    - [4.4 Deployment](#44-deployment)
+    - [4.5 Best Practices](#45-best-practices)
+  - [5. Fine Tuning LM to create custom AI App (Target audience: ML Engineers)](#5-fine-tuning-lm-to-create-custom-ai-app-target-audience-ml-engineers)
+    - [5.1 Training Data](#51-training-data)
+    - [5.2 Fine Tuning the Model](#52-fine-tuning-the-model)
+    - [5.3 Optimization](#53-optimization)
+    - [5.4 Deployment](#54-deployment)
+    - [5.5 Best Practices](#55-best-practices)
 
 ## 1. Introduction
 
@@ -105,12 +106,9 @@ Full Use requires using combination of these approaches
 
   LangFlow is a tool designed for rapid experimentation and prototyping with LangChain, providing a graphical user interface (GUI) that utilizes react-flow technology. It offers a drag-and-drop feature for easy prototyping and a built-in chat interface for real-time interaction. LangFlow allows users to edit prompt parameters, create chains and agents, track thought processes, and export flows. This modular and interactive design aims to foster creativity and streamline the creation process for dynamic graphs where each node is an executable unit​.
 
-
-
-
 ### 4.2 LangChain Examples and Templates
 
-- Example 1
+- Example 1:
 - Example 2
 
 ### 4.3 Evaluation
@@ -134,7 +132,7 @@ Full Use requires using combination of these approaches
 
 ### 5.2 Fine Tuning the Model
 
-- Example 1
+- Example 1: [Encoder Finetuning Vs Decoder (Zero Shot Learning Vs Few Shot Learning)](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/501aa878e6221084f6af1d609721cf07a87dd195/notebooks/LLM-low-data.ipynb)
 - Example 2
 
 ### 5.3 Optimization
