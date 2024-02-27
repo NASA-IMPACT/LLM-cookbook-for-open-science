@@ -160,22 +160,24 @@ Full Use requires using combination of these approaches
 
 ### 3.2.1 [PromptLab](https://flow.promptlab.nasa-impact.net/)
 
-  `Promptlab` is a modified and managed langflow instance developed by the IMPACT ML-and-Dev team, which further adds functionality that simplifes the creation and sharing of LLM workflows. It also has custom connectors that leverage SDE as a source of Documents for Retrieval Augmented Generation)  as well as predefined workflows for quick adaptation and re-use.
+  `Promptlab` is a modified and managed langflow instance developed by the IMPACT ML-and-Dev team, which further adds functionality that simplifes the creation and sharing of LLM workflows. It also has custom connectors that leverage SDE as a source of Documents for Retrieval Augmented Generation as well as predefined workflows for quick adaptation and re-use.
 
 Example usecases include: Creating a chatbot to build a QA system over a collection in SDE. Creating an Agent that automatically produces API queries from User query - All from the GUI.
 
 ### 3.2.3 Lang Flow Examples and Templates
 
-- Example 1
+- Example 1: `BPS OSDR Chatbot`
 - Example 2
 
 ## 4. Creating and Deploying AI App (Target audience: Developers)
 
 ### 4.1 LangChain Overview
 
+LangChain is an open source framework for building applications based on large language models (LLMs). It provides a set of tools to help LLMs generate more accurate and relevant information by chaining together models, prompt patterns and information stores to optimize the generation process. langchain is the underlying framework that powers Langflow/promptlab and is designed to be used by the developers as a standalone tool for building and deploying AI applications.
+
 ### 4.2 LangChain Examples and Templates
 
-- Example 1: [CMR ReACT agent](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/bfdaee5d2720e85660802a4d8aff2082c22a536f/notebooks/test-gkr.ipynb)
+- Example 1: [CMR ReACT agent](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/master/notebooks/langchain-react-test.ipynb)
 - Example 2:
 
 ### 4.3 Evaluation
