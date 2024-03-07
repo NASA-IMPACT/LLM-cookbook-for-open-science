@@ -12,6 +12,13 @@
     - [2.2 Typical Uses of Generative LLMs](#22-typical-uses-of-generative-llms)
     - [2.3 Prompt techniques Modifying Model Behavior](#23-prompt-techniques-modifying-model-behavior)
       - [Chain-of-thought Prompt pattern](#chain-of-thought-prompt-pattern)
+      - [ReACT Pattern](#react-pattern)
+    - [2.4 Prompt Patterns](#24-prompt-patterns)
+      - [Persona Pattern](#persona-pattern)
+      - [Audience Persona Pattern](#audience-persona-pattern)
+      - [Output Automator Pattern](#output-automator-pattern)
+      - [Recipe pattern](#recipe-pattern)
+      - [Template Pattern - Contextual Statements](#template-pattern---contextual-statements)
       - [Tail Generation Pattern](#tail-generation-pattern)
       - [Input Semantics Patterns](#input-semantics-patterns)
       - [Prompt Improvement Patterns](#prompt-improvement-patterns)
@@ -112,7 +119,7 @@ Chain of thought example template:
 [Step 3]: [Analyze/Evaluate/Consider] the [context/implication] of the [relationship/connection] between [element A] and [element B].
 [Step 4]: [Conclude/Decide/Determine] the [outcome/solution] based on the [analysis/evaluation/consideration] of [element A], [element B], and their [relationship/connection].
 [Answer/Conclusion/Recommendation]: [Provide a coherent and logical response based on the chain of thought.]
-
+```
 
 #### ReACT Pattern
   ReAct combines reasoning and actions to improve how LLMs think and make decisions. This method helps LLMs make better action plans and understand difficult situations. It also allows LLMs to use information from outside sources.
