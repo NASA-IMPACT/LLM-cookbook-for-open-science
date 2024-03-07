@@ -197,6 +197,8 @@ Please preserve the formatting and overall template that I provide.
 This is the template: PATTERN with [PLACEHOLDERS].
 ````
 
+ChatGPT example: https://chat.openai.com/share/118b5133-2be2-46fe-b44b-a3e6fce9fab1
+
 #### Tail Generation Pattern
 
 ```
