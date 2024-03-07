@@ -378,7 +378,7 @@ Fine tuning a language model is the process of training a pre-trained language m
 
 ### 5.2 Fine Tuning the Model
 
-- Example 1: [Encoder Finetuning Vs Decoder (Zero Shot Learning Vs Few Shot Learning)](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/501aa878e6221084f6af1d609721cf07a87dd195/notebooks/LLM-low-data.ipynb)
+- Example 1: [Encoder Finetuning Vs Decoder (Zero Shot Learning Vs Few Shot Learning)](https://github.com/NASA-IMPACT/smd-llm-workshop/blob/master/notebooks/EJ%20classify.ipynb)
 - Example 2 [Decoder Metadata Extraction Finetuning](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/5b4df90d1532a7ebb1e99e3ed48e07a9feea4e9a/notebooks/final_notebooks/Extractor_Pipeline.ipynb)
 
 ### 5.5 Best Practices
