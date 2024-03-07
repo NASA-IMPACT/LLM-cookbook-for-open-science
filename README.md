@@ -18,7 +18,7 @@
       - [Audience Persona Pattern](#audience-persona-pattern)
       - [Output Automator Pattern](#output-automator-pattern)
       - [Recipe pattern](#recipe-pattern)
-      - [Template Pattern - Contextual Statements](#template-pattern---contextual-statements)
+      - [Template Pattern](#template-pattern)
       - [Tail Generation Pattern](#tail-generation-pattern)
       - [Input Semantics Patterns](#input-semantics-patterns)
       - [Prompt Improvement Patterns](#prompt-improvement-patterns)
@@ -184,7 +184,7 @@ Consider the following problem: CMR API Query building. To solve it, let's break
 
 ChatGPT example: https://chat.openai.com/share/81178ceb-cec8-493c-a894-6d75ff64fecd
 
-#### Template Pattern - Contextual Statements
+#### Template Pattern
 
 Useful to enforce a specific structure or format for the output.
 
@@ -293,7 +293,6 @@ Please ignore lightning physics on Earth.
 
 #### Semantic Filter Pattern
 
-Contextual statements:
 ```
 Filter this information to remove [ENTITY].
 ```
