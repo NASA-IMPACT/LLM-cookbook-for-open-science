@@ -340,7 +340,8 @@ Example usecases include: Creating a chatbot to build a QA system over a collect
 ### 3.2.3 Lang Flow Examples and Templates
 
 - Example 1: `BPS OSDR Chatbot`
-- Example 2
+![image](https://github.com/NASA-IMPACT/smd-llm-workshop/assets/14973709/07c75230-3844-4f96-a982-69d13dd58416)
+
 
 ## 4. Creating and Deploying AI App (Target audience: Developers)
 
@@ -350,23 +351,16 @@ LangChain is an open source framework for building applications based on large l
 
 ### 4.2 LangChain Examples and Templates
 
-- Example 1: [CMR ReACT agent](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/master/notebooks/langchain-react-test.ipynb)
-- Example 2:
+- Example 1: A ReACT agent to build the correct CMR Query, based on user's text input. [CMR ReACT agent](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/master/notebooks/langchain-react-test.ipynb)
 
 ### 4.3 Evaluation
 
-- Example 1
-- Example 2
+- Example 1: <OSDR ChatBot Evaluation>
 
 ### 4.4 Deployment
 
-- Example 1
-- Example 2
+- <Azure Deployment Steps>
 
-### 4.5 Best Practices
-
-- Example 1
-- Example 2
 
 ## 5. Fine Tuning LM to create custom AI App (Target audience: ML Engineers)
 
@@ -388,17 +382,4 @@ Fine tuning a language model is the process of training a pre-trained language m
 - Example 1: [Encoder Finetuning Vs Decoder (Zero Shot Learning Vs Few Shot Learning)](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/501aa878e6221084f6af1d609721cf07a87dd195/notebooks/LLM-low-data.ipynb)
 - Example 2 [Decoder Metadata Extraction Finetuning](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/5b4df90d1532a7ebb1e99e3ed48e07a9feea4e9a/notebooks/final_notebooks/Extractor_Pipeline.ipynb)
 
-### 5.3 Optimization
-
-- Example 1
-- Example 2
-
-### 5.4 Deployment
-
-- Example 1: "process for deploying in azure"
-- Example 2
-
 ### 5.5 Best Practices
-
-- Example 1
-- Example 2
