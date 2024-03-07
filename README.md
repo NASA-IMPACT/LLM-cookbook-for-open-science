@@ -10,12 +10,20 @@
   - [2. How to Use LLM for Individual Tasks (Target audience: Everyone)](#2-how-to-use-llm-for-individual-tasks-target-audience-everyone)
     - [2.1 Prompt Engineering](#21-prompt-engineering)
     - [2.2 Typical Uses of Generative LLMs](#22-typical-uses-of-generative-llms)
-    - [2.3 Modifying Model Behavior](#23-modifying-model-behavior)
-    - [2.4 Prompt Pattern](#24-prompt-pattern)
-      - [Persona Pattern](#persona-pattern)
-      - [Audience Persona Pattern](#audience-persona-pattern)
-      - [Chain-of-thought pattern](#chain-of-thought-pattern)
-      - [Flipped Interaction Pattern](#flipped-interaction-pattern)
+    - [2.3 Prompt techniques Modifying Model Behavior](#23-prompt-techniques-modifying-model-behavior)
+      - [Chain-of-thought Prompt pattern](#chain-of-thought-prompt-pattern)
+      - [Tail Generation Pattern](#tail-generation-pattern)
+      - [Input Semantics Patterns](#input-semantics-patterns)
+      - [Prompt Improvement Patterns](#prompt-improvement-patterns)
+      - [Cognitive Verifier Pattern](#cognitive-verifier-pattern)
+      - [Refusal Breaker Pattern](#refusal-breaker-pattern)
+      - [Interaction Patterns - Flipped Interaction Pattern](#interaction-patterns---flipped-interaction-pattern)
+      - [Game Play Pattern](#game-play-pattern)
+      - [Infinite Generation Pattern](#infinite-generation-pattern)
+      - [Context Manager Pattern](#context-manager-pattern)
+      - [Semantic Filter Pattern](#semantic-filter-pattern)
+      - [Fact Checklist Pattern](#fact-checklist-pattern)
+      - [Reflection Pattern](#reflection-pattern)
     - [2.5 Best Practices/Guard Rails](#25-best-practicesguard-rails)
     - [2.6 Closing Thoughts](#26-closing-thoughts)
   - [3. Creating Quick App Prototypes (Target audience: Everyone)](#3-creating-quick-app-prototypes-target-audience-everyone)
@@ -79,15 +87,37 @@ Prompt engineering is the practice of designing inputs for generative AI tools l
 
 ### 2.2 Typical Uses of Generative LLMs
 
-### 2.3 Modifying Model Behavior
+### 2.3 Prompt techniques Modifying Model Behavior
 
-- Few Shot Learnings
+- Few Shot Learning
   - Providing model with more examples of the task it is trying to perform can help it perform better. This is especially true for tasks that require a lot of background or esoteric knowledge, like scientific text classification.
 
 - Chain of Thought
   - LLMs make more reasoning errors when trying to answer right away, rather than taking time to work out an answer. Asking for a "chain of thought" before an answer and force the generations in logical, step-by-step chunks can help the model reason its way toward correct answers more reliably.
+#### Chain-of-thought Prompt pattern
 
-### 2.4 Prompt Pattern
+
+```
+You are a decision bot. Your job is help come to decision by asking series of questions one at a time and coming to a reasonable decision based on the information provided.
+
+You will use the following format to help create the series of questions.
+
+Template: 
+[Problem/Scenario/Question]: [Provide a brief description of the problem, scenario, or question.]
+
+Chain of thought example template:
+
+[Step 1]: Identify the [key element/variable] in the [problem/scenario/question].
+[Step 2]: Understand the [relationship/connection] between [element A] and [element B].
+[Step 3]: [Analyze/Evaluate/Consider] the [context/implication] of the [relationship/connection] between [element A] and [element B].
+[Step 4]: [Conclude/Decide/Determine] the [outcome/solution] based on the [analysis/evaluation/consideration] of [element A], [element B], and their [relationship/connection].
+[Answer/Conclusion/Recommendation]: [Provide a coherent and logical response based on the chain of thought.]
+
+
+#### ReACT Pattern
+  ReAct combines reasoning and actions to improve how LLMs think and make decisions. This method helps LLMs make better action plans and understand difficult situations. It also allows LLMs to use information from outside sources.
+
+### 2.4 Prompt Patterns
 
 We provide some prompt patterns as templates that can be re-used for various tasks. These patterns are designed to be used as a starting point for prompt engineering, and can be modified to fit the specific needs of the task at hand. To use it out-of-the-box, replace the `[placeholders]` with the relevant information for your task.
 
@@ -107,34 +137,168 @@ Ask the model to produce outputs as if it were talking to a specific audience. U
 Assume that I am a [audience]. Explain [topic] to me.
 ```
 
-#### Chain-of-thought pattern
-
-refer to 2.3
-
-```
-You are a decision bot. Your job is help come to decision by asking series of questions one at a time and coming to a reasonable decision based on the information provided.
-
-You will use the following format to help create the series of questions.
-
-Template: 
-[Problem/Scenario/Question]: [Provide a brief description of the problem, scenario, or question.]
-
-Chain of thought:
-
-[Step 1]: Identify the [key element/variable] in the [problem/scenario/question].
-[Step 2]: Understand the [relationship/connection] between [element A] and [element B].
-[Step 3]: [Analyze/Evaluate/Consider] the [context/implication] of the [relationship/connection] between [element A] and [element B].
-[Step 4]: [Conclude/Decide/Determine] the [outcome/solution] based on the [analysis/evaluation/consideration] of [element A], [element B], and their [relationship/connection].
-[Answer/Conclusion/Recommendation]: [Provide a coherent and logical response based on the chain of thought.]
+#### Output Automator Pattern
+The intent of this pattern is to have the LLM generate a script or other automation artifact that can automatically perform any steps it recommends taking as part of its output.
 
 ```
+Whenever you produce an output that has at least one step to take and the following properties: [properties].
+Produce an executable artifact of type X that will automate these steps.
+```
 
-#### Flipped Interaction Pattern
+#### Recipe pattern
+
+Ask the model to follow a set of instructions to complete a task.
+
+```
+"Consider the following problem: [Insert Problem Description Here]. To solve it, let's break it down step by step:
+
+1. First, we need to [describe the first step of the reasoning process].
+2. Next, we should consider [outline the second step, including any relevant factors or variables].
+3. Then, we can calculate or evaluate [mention the calculations or evaluations needed].
+4. After that, it's important to [describe any additional steps or considerations].
+5. Finally, based on the above steps, we can conclude that [conclusion based on the reasoning].
+
+By following these steps, we can systematically approach and solve the problem."
+
+```
+
+example:
+
+```
+Consider the following problem: CMR API Query building. To solve it, let's break it down step by step:
+
+1. Parse the user query to identify key elements: location, science keyword, and date-time range.
+2. Convert the identified location into coordinates suitable for the CMR API.
+3. Extract the science keyword that matches CMR's terminology.
+4. Format the date-time range according to CMR API requirements.
+5. Construct the CMR API call using the extracted location (as coordinates), science keyword, and formatted date-time range.
+
+```
+
+ChatGPT example: https://chat.openai.com/share/81178ceb-cec8-493c-a894-6d75ff64fecd
+
+#### Template Pattern - Contextual Statements
+
+Useful to enforce a specific structure or format for the output.
+
+Example:
+````
+I am going to provide a template for your output.
+X is my placeholder for the content
+Try to fit the output into one or more of the placeholders that I list.
+Please preserve the formatting and overall template that I provide.
+This is the template: PATTERN with [PLACEHOLDERS].
+````
+
+#### Tail Generation Pattern
+
+```
+At the end of your response, please do <FOLLOW-UP TASK>.
+```
+
+#### Input Semantics Patterns
+
+```
+When I say X, I mean Y (or would like you to do Y).
+```
+
+```
+When I type X, you do Y
+Follow up with the next step.
+Here are all the X that I want you to do Y for:
+- X1 -> Y1
+- X2 -> Y2
+```
+
+#### Prompt Improvement Patterns
+
+These patterns are designed to help improve the quality of the model's output by asking the model to generate a better prompt.
+
+```
+Whenever I ask a question, suggest a better version of the question to use instead.
+```
+
+```
+If there are alternative ways to accomplish task X that I give you, list the best alternate approaches.
+(Optional) Compare/contrast the pros and cons of each approach.
+(Optional) Include the original way that I asked.
+(Optional) Prompt me on which approach I would like to use.
+```
+#### Cognitive Verifier Pattern
+
+```
+When you are asked a question, follow these rules [RULES].
+Generate a number of additional questions that would help more accurately answer the question.
+Combine the answers to the individual questions to produce the final answer to the overall question.
+```
+
+#### Refusal Breaker Pattern
+
+```
+Whenever you can't answer a question.
+Explain why you can't answer the question.
+Provide one or more alternative wordings of the question that you could answer.
+```
+
+#### Interaction Patterns - Flipped Interaction Pattern
+
+Rather than asking the model to generate a response to a prompt, ask the model to ask you questions to achieve a goal.
 
 ```
 I would like you to ask me questions to achieve X.
 You should ask questions until condition Y is met or to achieve this goal (alternatively, forever).
 (Optional) Ask me N questions at a time.
+```
+
+#### Game Play Pattern
+
+```
+Create a game for me around X (OR) we are going to play an X game.
+The Rules are as follows: [RULES]
+```
+
+#### Infinite Generation Pattern
+
+```
+Generate output forever, X output(s) at a time.
+(Optional) Here is how to use the input I provide between outputs.
+(Optional) Stop when I ask you to.
+```
+
+#### Context Manager Pattern
+
+```
+Within scope X.
+Please consider Y.
+Please ignore Z.
+(Optional) Start over.
+```
+
+example:
+
+```
+Within scope of lightning science, 
+please consider lightning physics on Jupiter. 
+Please ignore lightning physics on Earth.
+```
+
+#### Semantic Filter Pattern
+
+Contextual statements:
+```
+Filter this information to remove [ENTITY].
+```
+
+#### Fact Checklist Pattern
+```
+Generate a set of facts that are contained in the output.
+The set of facts should be inserted at [POSITION] in the output.
+The set of facts should be the fundamental facts that validates or invalidates the output.
+```
+#### Reflection Pattern
+
+```
+Answer [QUESTION]. Whenever you generate an answer, Explain the reasoning and assumptions behind your answer.
 ```
 
 ### 2.5 Best Practices/Guard Rails
@@ -213,7 +377,7 @@ Fine tuning a language model is the process of training a pre-trained language m
 ### 5.2 Fine Tuning the Model
 
 - Example 1: [Encoder Finetuning Vs Decoder (Zero Shot Learning Vs Few Shot Learning)](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/501aa878e6221084f6af1d609721cf07a87dd195/notebooks/LLM-low-data.ipynb)
-- Example 2
+- Example 2 [Decoder Metadata Extraction Finetuning](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/5b4df90d1532a7ebb1e99e3ed48e07a9feea4e9a/notebooks/final_notebooks/Extractor_Pipeline.ipynb)
 
 ### 5.3 Optimization
 
