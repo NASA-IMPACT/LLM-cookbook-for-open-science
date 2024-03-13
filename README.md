@@ -338,9 +338,8 @@ Example usecases include: Creating a chatbot to build a QA system over a collect
 
 ### 3.2.3 Lang Flow Examples and Templates
 
-- Example 1: `BPS OSDR Chatbot`
-![image](https://github.com/NASA-IMPACT/smd-llm-workshop/assets/14973709/07c75230-3844-4f96-a982-69d13dd58416)
-
+- Example 1: `BPS OSDR Chatbot`: A Retrieval Augmented Generation (RAG) based chatbot that uses the OSDR collection as a source of information. The chatbot is designed to answer questions about the OSDR collection and provide relevant information to the user. 
+- ![image](https://github.com/NASA-IMPACT/smd-llm-workshop/assets/14973709/07c75230-3844-4f96-a982-69d13dd58416)
 
 ## 4. Creating and Deploying AI App (Target audience: Developers)
 

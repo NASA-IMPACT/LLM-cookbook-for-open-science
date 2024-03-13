@@ -89,24 +89,13 @@ class CMRQueryAgent:
         )
         self.output_parser = CustomOutputParser()
         self.llm_chain = LLMChain(
-            llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0),
+            llm=ChatOpenAI(model_name="gpt-4-1106-preview", temperature=0),
             prompt=self.prompt,
         )
         self.create_agent()
 
     def create_tools(self):
         """create tools for the agent"""
-        # self.tools = [
-        #     Tool(
-        #         name="DateTime Extractor",
-        #         description="Extracts time string and converts it to a datetime format",
-        #         func=DatetimeChain().run,
-        #     ),
-
-        #     BoundingBoxFinderTool(),
-        #     # CMRResponseFilter(),
-        #     GCMDKeywordSearchTool(),
-        # ]
         self.tools = [
             Tool(
                 name=BoundingBoxFinderTool().name,
