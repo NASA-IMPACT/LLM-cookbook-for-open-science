@@ -386,3 +386,33 @@ Fine tuning a language model is the process of training a pre-trained language m
 - Example 2 [Decoder Metadata Extraction Finetuning](https://github.com/NASA-IMPACT/workshop-usecases-llm/blob/5b4df90d1532a7ebb1e99e3ed48e07a9feea4e9a/notebooks/final_notebooks/Extractor_Pipeline.ipynb)
 
 ### 5.5 Best Practices
+
+**Data Preparation:**
+
+Quality Over Quantity: Focus on high-quality, labeled data. Clean and preprocess the data thoroughly.
+Data Augmentation: Use techniques like noise injection, cropping, or synthetic data generation to enhance diversity and robustness.
+Model Selection:
+
+Right-Sized Models: Choose a model architecture appropriate for your dataset size and complexity to avoid overfitting or underfitting.
+
+**Fine-Tuning Strategy:**
+
+Layer-wise Fine-Tuning: Start by fine-tuning the last few layers before gradually unfreezing earlier layers, as they contain more generic features.
+Learning Rate: Use a smaller learning rate for fine-tuning to prevent catastrophic forgetting of the pre-trained knowledge.
+Regularization Techniques:
+
+Dropout: Apply dropout in fully connected layers to prevent overfitting.
+Early Stopping: Monitor validation loss and stop training when it begins to increase, using checkpoints to save the best model.
+
+**Optimization:**
+
+Optimizers: Use adaptive learning rate optimizers like AdamW, which are generally more effective for fine-tuning.
+Gradual Unfreezing: Gradually unfreeze the pre-trained layers while fine-tuning to allow the model to adapt more effectively.
+Evaluation Metrics:
+
+Domain-Specific Metrics: Use evaluation metrics that are most relevant to your specific application or domain for a more accurate assessment of performance.
+
+**Experiment Tracking:**
+
+Version Control for Data and Models: Use tools like DVC (Data Version Control) to track data, models, and experiments efficiently.
+Experiment Management Tools: Utilize tools like MLflow or Weights & Biases to log experiments, track progress, and compare results.
