@@ -341,6 +341,11 @@ Example usecases include: Creating a chatbot to build a QA system over a collect
 - Example 1: `BPS OSDR Chatbot`: A Retrieval Augmented Generation (RAG) based chatbot that uses the OSDR collection as a source of information. The chatbot is designed to answer questions about the OSDR collection and provide relevant information to the user. 
 - ![image](https://github.com/NASA-IMPACT/smd-llm-workshop/assets/14973709/07c75230-3844-4f96-a982-69d13dd58416)
 
+#### Evaluation:
+- https://docs.google.com/spreadsheets/d/1QhAecwVsVr-oDirHX7F7k_rxS-bAcopX3zp46drekUY/edit#gid=1865733228
+  <img width="600" alt="image" src="https://github.com/NASA-IMPACT/smd-llm-workshop/assets/14973709/280dcb9c-4d57-430e-a3b6-95794efaae0b">
+
+
 ## 4. Creating and Deploying AI App (Target audience: Developers)
 
 ### 4.1 LangChain Overview
