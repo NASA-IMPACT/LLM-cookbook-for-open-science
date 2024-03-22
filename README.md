@@ -155,7 +155,7 @@ provided “ingredients” that must be provided in a series of steps to achieve
 
 - For data workflows, the answers are sufficient but I suspect there may be even more effective ways of finding or working with data that may not be available to ChatGPT.
 
-[Example](/chat-examples/recipt.md)
+[Example](/chat-examples/recipe.md)
 
 
 ## Output Automator Pattern
@@ -176,7 +176,7 @@ Create a script that \[describes the task to be automated\], using \[specific pa
 
 - I can’t validate the scripts at this time. All I can do is check that they seem to make sense and are using the correct access points which they seem to be doing.
 
-[Example](/chat-examples/output-automater.md)
+[Example](/chat-examples/output_automater.md)
 
 ## Persona Pattern
 
@@ -382,7 +382,7 @@ Type
 - Requirements
 - Procedures
 
-[Notebook Example](notebooks/Chat-with-mDGF.ipynb)
+[Notebook Example](/notebooks/Chat-with-mDGF.ipynb)
 
 # Creating Quick Prototype Applications Using LangFlow
 
@@ -479,12 +479,12 @@ Fine tuning a language model is the process of training a pre-trained language m
 
 ### Fine Tuning an Encoder Model
 
-An encoder LLM model is fine-tuned by connecting task-specific layers to the pre-trained model and training the entire model on a task-specific dataset. This process is best suited for tasks that require the model to generate structured outputs based on the input, such as text classification, named entity recognition, and text summarization. These models are best performing when they are used as part of a larger pipeline, where the model's output is used as input to another model or system. e.g. sentence transformer, text classification, named entity recognition, text summarization
+An encoder LLM model is fine-tuned by connecting task-specific layers to the pre-trained model and training the entire model on a task-specific dataset. This process is best suited for tasks that require the model to generate structured outputs based on the input, such as text classification, named entity recognition, and text summarization. These models are best performing when they are used as part of a larger pipeline, where the model's output is used as input to another model or system. e.g. sentence transformer, text classification, named entity recognition, text summarization.
 
-[Notebook Example](notebooks/EJ Classify.ipynb)
+[Notebook Example](/notebooks/EJ Classify.ipynb)
 
 ### Fine Tuning a Decoder Model
 
 A decoder LLM model is fine-tuned by providing the model with task-specific examples and training it to generate outputs that are relevant to the task. This process is best suited for tasks that require the model to generate free-form text based on the input, such as question answering, text generation, and dialogue systems and function calling. These models are best performing when they are used as standalone systems, where the model's output is the final output of the system. while fine tuning the decoder model end-to-end is prohibitively expensive and destroys the connections learned during pre-training, it is possible to fine-tune the model using low-rank adaptation (LoRA) techniques, in which only a small subset of the model's parameters are updated during training, there-by reducing the computational cost of fine-tuning the model, as well as preserving the model's original capabilities.
 
-[Notebook Example](notebooks/EJ-metadataextraction.ipynb)
+[Notebook Example](/notebooks/EJ-metadataextraction.ipynb)
