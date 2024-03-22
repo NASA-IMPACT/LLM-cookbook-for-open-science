@@ -155,7 +155,7 @@ provided “ingredients” that must be provided in a series of steps to achieve
 
 - For data workflows, the answers are sufficient but I suspect there may be even more effective ways of finding or working with data that may not be available to ChatGPT.
 
-[Example](/chat-examples/recipt.md)
+[Example](chat-examples/recipt.md)
 
 
 ## Output Automator Pattern
@@ -176,7 +176,7 @@ Create a script that \[describes the task to be automated\], using \[specific pa
 
 - I can’t validate the scripts at this time. All I can do is check that they seem to make sense and are using the correct access points which they seem to be doing.
 
-[Example](/chat-examples/output-automater.md)
+[Example](chat-examples/output-automater.md)
 
 ## Persona Pattern
 
@@ -197,7 +197,7 @@ Respond to my questions about \[a specific topic or issue\] as if you are \[spec
 - When I asked this: “Respond to my questions about gravitational waves as if you are an expert astrophysicist. Explain the processes involved from your expert perspective,” I got a super long paragraph with no interaction. Sometimes I would get an interactive experience, other times I would not. It was not consistent.
 - Given ChatGPT’s reading/writing level, the responses are not always in the technical language you would expect of a scientist. For example, in the astrophysics example, the description of how an interferometer works is mostly correct (I think) but not in the language of a scientist working in that field. However, I still found the explanation of how GW data is validated and how multi-messenger astronomy works helpful for someone trying to get a basic understanding of it.
 
-[Example](/chat-examples/persona.md)
+[Example](chat-examples/persona.md)
 
 # Interaction
 
@@ -221,7 +221,7 @@ The flipped interaction pattern switches the typical interactions so that the LL
 - When asking this - “Instead of explaining directly, ask me a series of questions one-by one about star formation to help me understand the concept better,” it just asked the questions and gave me no feedback as to whether my answers were correct.
 - Whenever I prompt this - “Instead of explaining directly, ask me a series of questions about star formation to help me understand the concept better,” it will sometimes just provide a list of 10 questions instead of walking me through the questions.
 
-[Example](/chat-examples/flipped-interaction.md)
+[Example](chat-examples/flipped-interaction.md)
 
 # Prompt Improvement
 
@@ -244,7 +244,7 @@ This pattern leverages the LLM to make the prompt engineering process better. Th
 
 - Sometimes after ChatGPT would write a better question for me, I would copy and paste the question back into the chat to get the answer. Often it would comment on the clarity of the question as opposed to answering the question itself. If I was more specific and said: “Answer the following question: …..” it would then answer the question for me.
 
-[Example](/chat-examples/question-refinement.md)
+[Example](chat-examples/question-refinement.md)
 
 ## Alternative Approach Pattern
 
@@ -262,7 +262,7 @@ Provide different approaches to solve \[specific problem or task\], considering 
 
 ### Lessons Learned
 
-[Example](/chat-examples/alternative-approach.md)
+[Example](chat-examples/alternative-approach.md)
 
 ## Cognitive Verifier Pattern
 
@@ -281,7 +281,7 @@ For the question '\[initial question\]', suggest a series of sub questions to he
 
 - This one seems to work well and is fairly straightforward.
 
-[Example](/chat-examples/cognitive-verifier.md)
+[Example](chat-examples/cognitive-verifier.md)
 
 # Error Identification
 
@@ -306,7 +306,7 @@ From now on, when you generate an answer, create a set of facts that the answer 
 - Adding the ‘only include the facts related to \[x\] didn’t really work for me and doesn’t seem to be terribly helpful anyways.
 - I’m not 100% sure that I would call this a ‘fact list’ so much as a list of follow up questions for the model or a list of keywords that can be used to search in Google.
 
-[Example](/chat-examples/fact-check.md)
+[Example](chat-examples/fact-check.md)
 
 # Context Control
 
@@ -330,7 +330,7 @@ When explaining/studying \[topic\], only include information on \[specific sub-t
 
 - I tried a lazy prompt like this one ->”When explaining how exoplanets are detected, ignore the transmit method.” <- and did not get a good response. It still included the transit method. So a little structure is required.
 
-[Example](/chat-examples/context-manager.md)
+[Example](chat-examples/context-manager.md)
 
 # Putting It All Together: Combining Prompt Patterns
 
