@@ -58,9 +58,8 @@ Viewing AI as a collaborative partner rather than a standalone solution emphasiz
 ![Change instance type](images/update-instance-type.png)
 10. Click on `Run Space`. If it throws an error, you might have to pick an Image. The top setting called `Latest` works. 
 ![Run space](images/updated-instance-config.png)
-
-# Steps to Train (Parts of these steps are also available in the [fine-tuning notebook](notebooks/hls-fm-finteuning.ipynb)):
-1. Clone this repository `git clone https://github.com/nasa-impact/smd-llm-workshop.git`
+11. Open the Jupyter lab instance.
+11. Clone this repository `git clone https://github.com/nasa-impact/smd-llm-workshop.git`
 ```
 a. Click `git`
 b. Click on `Git Clone Repo`
