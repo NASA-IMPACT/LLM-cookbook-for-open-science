@@ -63,7 +63,9 @@
   - [Implementation Steps](#implementation-steps)
   - [Background Information](#background-information)
     - [Lang Flow Overview](#lang-flow-overview)
-    - [PromptLab](#promptlab)
+    - [Promptlab](#promptlab)
+    - [OSDR Chatbot](#osdr-chatbot)
+    - [Evaluation of OSDR Chatbot](#evaluation-of-osdr-chatbot)
 - [Enhancing Data Discovery with LangChain: Earth Science \& Astrophysics Examples](#enhancing-data-discovery-with-langchain-earth-science--astrophysics-examples)
   - [Goals](#goals-1)
   - [Approach](#approach-1)
@@ -526,13 +528,51 @@ For data stewards, this activity will highlight the benefits of using curated SD
 
 ## Background Information
 
-### Lang Flow Overview
+### [Lang Flow](https://github.com/logspace-ai/langflow) Overview
 
 LangFlow is a tool designed for rapid experimentation and prototyping with LangChain, providing a graphical user interface (GUI) that utilizes react-flow technology. It offers a drag-and-drop feature for easy prototyping and a built-in chat interface for real-time interaction. LangFlow allows users to edit prompt parameters, create chains and agents, track thought processes, and export flows. This modular and interactive design aims to foster creativity and streamline the creation process for dynamic graphs where each node is an executable unit​.
 
-### PromptLab
+### [Promptlab](https://flow.promptlab.nasa-impact.net/)
 
 Promptlab is a modified and managed LangFlow instance developed by the IMPACT ML-and-Dev team, which further adds functionality that simplifies the creation and sharing of LLM workflows. It also has custom connectors that leverage SDE as a source of documents for Retrieval Augmented Generation as well as predefined workflows for quick adaptation and re-use.
+
+Link to Promptlab: [Promptlab](https://flow.promptlab.nasa-impact.net/)
+
+### OSDR Chatbot
+
+**Goal**
+Demonstrate rapid prototyping with LangFlow using a RAG chatbot for the Open Science Data Repository (OSDR). The OSDR provides open access to NASA’s space biology data including GeneLab and the Ames Life Sciences Data Archive (ALSDA). 
+**Approach**
+Leverage trusted and curated NASA SMD resources from the Science Discovery Engine (SDE) index in order to create a topical chatbot focused on the OSDR. 
+We will utilize prebuilt Lang Flow components for SMD, requiring minimal configuration.
+**Value** 
+Science Users: Facilitate direct interaction with authoritative domain-specific sources to streamline workflows
+Data Stewards: Highlight the benefits of curated SDE resources for chatbot development.
+**Implementation Steps**
+- Begin with existing workflow templates for speed and efficiency, or create your own
+- Customize the SDE retriever to focus on specific topics or themes.
+- Engage with the chatbot through the chat interface or a Python interface for versatility.
+
+
+### Evaluation of OSDR Chatbot
+
+**Goal**
+The goal of this activity is to evaluate the correctness of the OSDR chatbot in providing relevant and accurate information to users. The evaluation is done in two stages:
+- Information Retrieval: Quantifying Retrieval Performance of the SDE Retriever
+- Response Generation: Qualitative Evaluation of the answers produced by Chatbot
+
+**Value** 
+- For Scientists: Ensuring that the chatbot provides accurate and relevant information to users
+- For Data Stewards: Ensuring that the chatbot is effectively utilizing the SDE resources to provide accurate answers
+
+**Implementation Steps**
+- Export the promptlab "flow" into Jupyter Notebooks
+- Define evaluation metrics for the SDE retriever
+- Evaluate the retrieval performance of the SDE retriever
+- Define evaluation metrics for the chatbot
+- Evaluate the quality of the answers produced by the chatbot
+
+- [Notebook Example](/notebooks/OSDR-evaluation.ipynb)
 
 # Enhancing Data Discovery with LangChain: Earth Science & Astrophysics Examples
 
