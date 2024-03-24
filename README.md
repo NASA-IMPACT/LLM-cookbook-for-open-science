@@ -1,3 +1,84 @@
+- [Introduction](#introduction)
+  - [Use of LLMs in NASA’s Science Mission Directorate](#use-of-llms-in-nasas-science-mission-directorate)
+    - [Motivation](#motivation)
+    - [Goal for this Tutorial](#goal-for-this-tutorial)
+    - [Assumptions](#assumptions)
+  - [General AI Ethics Reminder](#general-ai-ethics-reminder)
+- [Prompt Engineering for Science](#prompt-engineering-for-science)
+  - [Introduction](#introduction-1)
+    - [Fundamental LLM Definitions](#fundamental-llm-definitions)
+    - [What is Prompt Engineering?](#what-is-prompt-engineering)
+    - [How to Select an LLM for Your Use Case: Popular LLM Quick Guide](#how-to-select-an-llm-for-your-use-case-popular-llm-quick-guide)
+    - [Working with Parameters](#working-with-parameters)
+    - [Best Practices for Prompt Engineering](#best-practices-for-prompt-engineering)
+  - [Prompt Patterns for Science](#prompt-patterns-for-science)
+    - [Output Customization](#output-customization)
+      - [Recipe Pattern](#recipe-pattern)
+        - [Recipe Prompt Template](#recipe-prompt-template)
+        - [Recipe Science Examples](#recipe-science-examples)
+        - [Lessons Learned](#lessons-learned)
+      - [Output Automator Pattern](#output-automator-pattern)
+        - [Output Automator Prompt Template](#output-automator-prompt-template)
+        - [Output Automator Science Examples](#output-automator-science-examples)
+        - [Lessons Learned](#lessons-learned-1)
+      - [Persona Pattern](#persona-pattern)
+        - [Persona Prompt Template](#persona-prompt-template)
+        - [Persona Prompt Science Examples](#persona-prompt-science-examples)
+        - [Lessons Learned](#lessons-learned-2)
+    - [Interaction](#interaction)
+      - [Flipped Interaction](#flipped-interaction)
+        - [Flipped Interaction Prompt Template](#flipped-interaction-prompt-template)
+        - [Flipped Interaction Prompt Science Examples](#flipped-interaction-prompt-science-examples)
+        - [Lessons Learned](#lessons-learned-3)
+    - [Prompt Improvement](#prompt-improvement)
+      - [Question Refinement Pattern](#question-refinement-pattern)
+        - [Question Refinement Prompt Template](#question-refinement-prompt-template)
+        - [Question Refinement Science Examples](#question-refinement-science-examples)
+        - [Lessons Learned](#lessons-learned-4)
+      - [Alternative Approach Pattern](#alternative-approach-pattern)
+        - [Alternative Approach Prompt Template](#alternative-approach-prompt-template)
+        - [Alternative Approach Science Examples](#alternative-approach-science-examples)
+        - [Lessons Learned](#lessons-learned-5)
+      - [Cognitive Verifier Pattern](#cognitive-verifier-pattern)
+        - [Cognitive Verifier Prompt Template](#cognitive-verifier-prompt-template)
+        - [Cognitive Verifier Science Examples](#cognitive-verifier-science-examples)
+        - [Lessons Learned](#lessons-learned-6)
+    - [Error Identification](#error-identification)
+      - [Fact Check List Pattern](#fact-check-list-pattern)
+        - [Fact Check List Prompt Template](#fact-check-list-prompt-template)
+        - [Fact Check List Science Examples](#fact-check-list-science-examples)
+        - [Lessons Learned](#lessons-learned-7)
+    - [Context Control](#context-control)
+      - [Context Manager Pattern](#context-manager-pattern)
+        - [Context Manager Prompt Template](#context-manager-prompt-template)
+        - [Context Manager Science Examples](#context-manager-science-examples)
+        - [Lessons Learned](#lessons-learned-8)
+    - [Putting It All Together: Combining Prompt Patterns](#putting-it-all-together-combining-prompt-patterns)
+      - [mDGF Prompt](#mdgf-prompt)
+- [Creating Quick Prototype Applications Using LangFlow](#creating-quick-prototype-applications-using-langflow)
+  - [Goals](#goals)
+  - [Approach](#approach)
+  - [Value](#value)
+  - [Implementation Steps](#implementation-steps)
+  - [Background Information](#background-information)
+    - [Lang Flow Overview](#lang-flow-overview)
+    - [PromptLab](#promptlab)
+- [Enhancing Data Discovery with LangChain: Earth Science \& Astrophysics Examples](#enhancing-data-discovery-with-langchain-earth-science--astrophysics-examples)
+  - [Goals](#goals-1)
+  - [Approach](#approach-1)
+  - [Value](#value-1)
+  - [Implementation Steps](#implementation-steps-1)
+  - [Background Information](#background-information-1)
+- [Fine-Tuning the NASA SMD Encoder Model](#fine-tuning-the-nasa-smd-encoder-model)
+  - [Goal](#goal)
+  - [Approach](#approach-2)
+  - [Value](#value-2)
+  - [Implementation Steps](#implementation-steps-2)
+  - [Background Information](#background-information-2)
+    - [Fine Tuning an Encoder Model](#fine-tuning-an-encoder-model)
+    - [Fine Tuning a Decoder Model](#fine-tuning-a-decoder-model)
+
+
 # Introduction
 
 ## Use of LLMs in NASA’s Science Mission Directorate
@@ -35,40 +116,6 @@ A critical aspect of engaging with LLMs, particularly in formulating inquiries, 
 Also, adopting a skeptical yet open mindset toward the information and outputs generated by LLMs is crucial. Carl Sagan's advocacy for the "baloney detection kit" is a valuable reminder to exercise critical thinking and seek independent verification of facts. This approach emphasizes the principles of 'trust but verify' and cautions against blind acceptance of generated content. Maintaining this carefulness ensures that one does not "check their brain at the door" but engages actively in the evaluative process.
 
 Viewing AI as a collaborative partner rather than a standalone solution emphasizes the importance of human oversight in the decision-making process. The analogy of a co-pilot aptly illustrates this relationship; just as a co-pilot supports the pilot in navigating and ensuring the aircraft's safety, LLMs can assist researchers in exploring information and data. The responsibility to verify the validity and accuracy of the LLM outputs rests with the user. This partnership highlights the need for continuous engagement and verification by researchers to ensure the integrity and reliability of the generated content, reinforcing the principle that one should never let the AI "fly the ship unattended."
-
-# Getting access
-1. Get your credentials and other information using http://smd-ai-workshop-creds-webapp.s3-website-us-east-1.
-![Get Credentials](images/credential.png)
-![Credentials](images/credentials-show.png)
-2. Navigate to https://nasa-impact.awsapps.com/start#/ 
-![Login Page](images/login-1.png)
-3. Log in using the credential provided
-![Login with username and password](images/login-2.png)
-4. Navigate to the `Applications` tab
-![Logged in home page](images/loggedin.png)
-5. Click and open `Amazon SageMaker Studio`
-![List of Applications](images/applications.png)
-6. Once the Studio starts, Click on JupyterLab
-![Sagemaker studio](images/sagemaker-studio.png)
-![JupyterLab spaces](images/jupyterlab-spaces.png)
-7. Click `Create JupyterLab Space`
-![JupyterLab spaces](images/create-jupyterlab-env.png)
-8. Give it a name. Eg: `Workshop`
-9. Once initialized, change Instance type to `ml.t3.large` and storage to `50`
-![Change instance type](images/update-instance-type.png)
-10. Click on `Run Space`. If it throws an error, you might have to pick an Image. The top setting called `Latest` works. 
-![Run space](images/updated-instance-config.png)
-11. Open the Jupyter lab instance.
-11. Clone this repository `git clone https://github.com/nasa-impact/smd-llm-workshop.git`
-```
-a. Click `git`
-b. Click on `Git Clone Repo`
-![Git clone](images/git-clone-1.png)
-c. Paste `https://github.com/nasa-impact/smd-llm-workshop.git` and Click on `Clone`.
-![Cloned repository](images/smd-llm-git-clone.png)
-![Cloned repository](images/smd-llm-cloned-content.png)
-```
-
 
 # Prompt Engineering for Science
 
@@ -162,181 +209,181 @@ Reference: Pluralsight course - Getting Started on Prompt Engineering with Gener
 - Ownership/Copyright: Generate original content, respecting copyright laws. When using RAG patterns, leverage authoritative sources like the Science Discovery Engine index and provide proper citations.
 - Transparency: Ask the model to explain the reasoning behind AI outputs or use prompts like ‘fact check’ to help verify. When using RAG patterns, leverage authoritative sources like the Science Discovery Engine index and provide proper citations.
 
-# Prompt Patterns for Science
+## Prompt Patterns for Science
 
 Let's explore some common prompt patterns as templates that can be re-used for various scientific tasks. These patterns are designed to be used as a starting point for prompt engineering, and can be modified to fit the specific needs of the task at hand. To quickly get started in using the patterns, replace the \[placeholders\] with the relevant information for your task.
 
 Reference: White et al. ‘A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT.’ <https://arxiv.org/abs/2302.11382>
 
-# Output Customization
+### Output Customization
 
 These prompts focus on tailoring or guiding the format, structure or type of output provided by the LLM.
 
-## Recipe Pattern
+#### Recipe Pattern
 
 This pattern provides limits to ultimately output a sequence of steps given some partially
 
 provided “ingredients” that must be provided in a series of steps to achieve a stated goal. This prompt is helpful for tasks when the user knows the desired end result and the ingredients needed to achieve the result but not the detailed steps themselves.
 
-### Recipe Prompt Template
+##### Recipe Prompt Template
 
 “I am trying to \[complete a task\]. I know that I need \[step A, B, C\]. Please provide a complete sequence of steps. Please fill in any missing steps.”
 
-### Recipe Science Examples
+##### Recipe Science Examples
 
 - I am trying to preprocess Landsat 8 Level-1 data. I know that I need to find and download the data. I know that I need to complete georeferencing, conversion to radiance, solar corrections and atmospheric corrections. I know I will use the ENVI software. Please provide a complete sequence of steps. Please fill in any missing steps.
 - I am trying to find and download infrared data of the Crab Nebula. I know that I need to identify the various coordinates of the Crab Nebula. I know that I need to search for data across a number of astronomical catalogs. Please provide a complete sequence of steps. Please fill in any missing steps.
 
-### Lessons Learned
+##### Lessons Learned
 
 - For data workflows, the answers are sufficient but I suspect there may be even more effective ways of finding or working with data that may not be available to ChatGPT.
 
 [Example](/chat-examples/recipe.md)
 
 
-## Output Automator Pattern
+#### Output Automator Pattern
 
 The goal of this pattern is to have the LLM generate a script that can automatically perform any steps it recommends taking as part of its output. The goal is to reduce the manual effort needed to implement any LLM output recommendations.
 
-### Output Automator Prompt Template
+##### Output Automator Prompt Template
 
 Create a script that \[describes the task to be automated\], using \[specific parameters or conditions\]. Output the steps in \[desired format or language\].
 
-### Output Automator Science Examples
+##### Output Automator Science Examples
 
 - Create a script that automatically compiles and summarizes the number of new planets confirmed in the previous week using the NASA exoplanet archive data. Include data on planet name, host name and discovery method. Output the summary in a CSV format.
 - Create a script that uses the HAPI API to store data from the Parker Solar Probe in an array. Output the summary in a JSON format.
 - Create a script that automatically compiles and summarizes weekly seismic activity reports from the USGS database, focusing on earthquakes above magnitude 4.0. Include data on location, magnitude, depth, and potential affected areas. Output the summary in a CSV format.
 
-### Lessons Learned
+##### Lessons Learned
 
 - I can’t validate the scripts at this time. All I can do is check that they seem to make sense and are using the correct access points which they seem to be doing.
 
 [Example](/chat-examples/output_automater.md)
 
-## Persona Pattern
+#### Persona Pattern
 
 This type of prompt allows the user to specify a point of view or perspective for the LLM to adopt. The pattern allows users to identify what they need help with without knowing the exact details.
 
-### Persona Prompt Template
+##### Persona Prompt Template
 
 Respond to my questions about \[a specific topic or issue\] as if you are \[specific profession\].
 
-### Persona Prompt Science Examples
+##### Persona Prompt Science Examples
 
 - Respond to my questions about gravitational waves as if you are an expert astrophysicist.
 - Respond to my questions about the formation of gas planets as if you are an expert planetary scientist.
 - Respond to my questions about the effects of spaceflight on life as if you are an expert space biologist.
 
-### Lessons Learned
+##### Lessons Learned
 
 - When I asked this: “Respond to my questions about gravitational waves as if you are an expert astrophysicist. Explain the processes involved from your expert perspective,” I got a super long paragraph with no interaction. Sometimes I would get an interactive experience, other times I would not. It was not consistent.
 - Given ChatGPT’s reading/writing level, the responses are not always in the technical language you would expect of a scientist. For example, in the astrophysics example, the description of how an interferometer works is mostly correct (I think) but not in the language of a scientist working in that field. However, I still found the explanation of how GW data is validated and how multi-messenger astronomy works helpful for someone trying to get a basic understanding of it.
 
 [Example](/chat-examples/persona.md)
 
-# Interaction
+### Interaction
 
 These prompts help control the interaction between the user and the LLM.
 
-## Flipped Interaction
+#### Flipped Interaction
 
 The flipped interaction pattern switches the typical interactions so that the LLM is asking the user questions instead of the user. The interaction should drive the conversation towards a goal. This pattern allows the LLM to use its knowledge to more accurately obtain information from a user. The prompt should always specify the goal of the interaction so that the LLM can understand what it is trying to accomplish.
 
-### Flipped Interaction Prompt Template
+##### Flipped Interaction Prompt Template
 
 "Instead of explaining directly, ask me a series of questions one by one about \[specific topic or concept\] to help me understand the concept better."
 
-### Flipped Interaction Prompt Science Examples
+##### Flipped Interaction Prompt Science Examples
 
 - Instead of explaining directly, interact with me by asking me a series of questions one by one about star formation to help me understand the concept better.
 - Instead of explaining directly, interact with me by asking me a series of questions one by one about space weather to help me understand the concept better.
 
-### Lessons Learned
+##### Lessons Learned
 
 - When asking this - “Instead of explaining directly, ask me a series of questions one-by one about star formation to help me understand the concept better,” it just asked the questions and gave me no feedback as to whether my answers were correct.
 - Whenever I prompt this - “Instead of explaining directly, ask me a series of questions about star formation to help me understand the concept better,” it will sometimes just provide a list of 10 questions instead of walking me through the questions.
 
 [Example](/chat-examples/flipped-interaction.md)
 
-# Prompt Improvement
+### Prompt Improvement
 
 These prompts focus on improving the quality of both the input and the output.
 
-## Question Refinement Pattern
+#### Question Refinement Pattern
 
 This pattern leverages the LLM to make the prompt engineering process better. The prompt allows the LLM to help the user ask better questions.
 
-### Question Refinement Prompt Template
+##### Question Refinement Prompt Template
 
 "Refine my question about \[original topic or question\] to make it more specific and clear, focusing on \[desired aspect or detail\]."
 
-### Question Refinement Science Examples
+##### Question Refinement Science Examples
 
 - Refine my question about how lightning forms to make it more specific and clear, focusing on the role of ice particles.
 - Refine my question about how spaceflight affects organisms to make it more specific and clear, focusing on how spaceflight affects genes.
 
-### Lessons Learned
+##### Lessons Learned
 
 - Sometimes after ChatGPT would write a better question for me, I would copy and paste the question back into the chat to get the answer. Often it would comment on the clarity of the question as opposed to answering the question itself. If I was more specific and said: “Answer the following question: …..” it would then answer the question for me.
 
 [Example](/chat-examples/question-refinement.md)
 
-## Alternative Approach Pattern
+#### Alternative Approach Pattern
 
 This prompt allows the LLM to provide alternative approaches to accomplishing a task.
 
-### Alternative Approach Prompt Template
+##### Alternative Approach Prompt Template
 
 Provide different approaches to solve \[specific problem or task\], considering various data, methods, tools, or algorithms that could be applied.
 
-### Alternative Approach Science Examples
+##### Alternative Approach Science Examples
 
 - Provide different approaches to studying the Earth from space, considering various methods, tools, or perspectives that could be applied.
 - Provide different approaches to detecting exoplanets, considering various data, methods, tools, or algorithms that could be applied.
 - Provide different approaches to determining Earth's surface reflectance, considering various data, methods, tools, or algorithms that could be applied.
 
-### Lessons Learned
+##### Lessons Learned
 
 [Example](/chat-examples/alternative-approach.md)
 
-## Cognitive Verifier Pattern
+#### Cognitive Verifier Pattern
 
 LLMs often perform better when using a question that is subdivided into individual questions. This prompt forces the LLM to break questions down into additional smaller questions.
 
-### Cognitive Verifier Prompt Template
+##### Cognitive Verifier Prompt Template
 
 For the question '\[initial question\]', suggest a series of sub questions to help explore and understand the various aspects of this topic, leading to a more informed and comprehensive answer.
 
-### Cognitive Verifier Science Examples
+##### Cognitive Verifier Science Examples
 
 - For the question 'what happens during a total solar eclipse?', suggest a series of subquestions to help explore and understand the various aspects of this topic, leading to a more informed and comprehensive answer.
 - For the question 'what are emerging research areas in astrophysics?', suggest a series of subquestions to help explore and understand the various aspects of this topic, leading to a more informed and comprehensive answer.
 
-### Lessons Learned
+##### Lessons Learned
 
 - This one seems to work well and is fairly straightforward.
 
 [Example](/chat-examples/cognitive-verifier.md)
 
-# Error Identification
+### Error Identification
 
 These prompts help you identify and resolve errors that may be in the output generated by the LLM.
 
-## Fact Check List Pattern
+#### Fact Check List Pattern
 
 This pattern is meant to ensure that the model provides a list of facts that are present in the output in order to help inform the user of the facts the output is based on. The user can then leverage the list of facts to validate the output.
 
-### Fact Check List Prompt Template
+##### Fact Check List Prompt Template
 
 From now on, when you generate an answer, create a set of facts that the answer depends on that should be fact checked and list this set of facts at the end of your output.
 
-### Fact Check List Science Examples
+##### Fact Check List Science Examples
 
 - From now on, when you answer a question, create a set of facts that the answer depends on that should be fact checked and list this set of facts at the end of your output. How does space weather affect Earth?
 - From now on, when you answer a question, create a set of facts that the answer depends on that should be fact checked and list this set of facts at the end of your output. What causes the greenhouse gas effect on Venus?
 
-### Lessons Learned
+##### Lessons Learned
 
 - I could use the fact list to ask follow up questions. ChatGPT then provided facts for the answer to the follow up question.
 - Adding the ‘only include the facts related to \[x\] didn’t really work for me and doesn’t seem to be terribly helpful anyways.
@@ -344,37 +391,37 @@ From now on, when you generate an answer, create a set of facts that the answer 
 
 [Example](/chat-examples/fact-check.md)
 
-# Context Control
+### Context Control
 
 These prompts focus on controlling the contextual information that the LLM uses.
 
-## Context Manager Pattern
+#### Context Manager Pattern
 
 This pattern allows users to specify or remove context for a conversation with an LLM. The goal is to focus the conversation on specific topics or exclude topics from the conversation.
 
-### Context Manager Prompt Template
+##### Context Manager Prompt Template
 
 When explaining/studying \[topic\], only include information on \[specific sub-topic\]. Ignore \[alternative sub-topic\].
 
-### Context Manager Science Examples
+##### Context Manager Science Examples
 
 - When explaining how exoplanets are detected, only include information on the gravitational lensing method. Ignore the transit method.
 - When explaining how lightning works, only include information on lightning that results from volcanic eruptions. Ignore lightning that occurs during atmospheric weather events.
 - When studying the greenhouse gas effect, consider the greenhouse gas effect on Venus. Please ignore the greenhouse effect on Earth.
 
-### Lessons Learned
+##### Lessons Learned
 
 - I tried a lazy prompt like this one ->”When explaining how exoplanets are detected, ignore the transmit method.” <- and did not get a good response. It still included the transit method. So a little structure is required.
 
 [Example](/chat-examples/context-manager.md)
 
-# Putting It All Together: Combining Prompt Patterns
+### Putting It All Together: Combining Prompt Patterns
 
 The prompt patterns described above can be combined to complete more complex tasks. For this example, the Persona, Recipe and Output Automator prompt patterns will be combined to help you create either a requirements document or a procedure plan related to scientific data governance and management.
 
 This activity uses the [Modern Scientific Data Governance Framework (mDGF)](https://github.com/NASA-IMPACT/modern-dgf/tree/main) to help you easily answer questions about government mandates and organizational policies related to scientific data management. You will also be able to use the prompt to create either a requirements document or a procedure plan informed by the mDGF. The goal of this activity is to make it easier to develop a plan to implement what is needed to be compliant with policies and procedures.
 
-## mDGF Prompt
+#### mDGF Prompt
 
 You are an expert in scientific data governance and management and you will assist the users by answering questions and creating documents. Use only the content in the Modern Data Governance Framework (MDGF) reference text after the delimiter for your answers. If a questions falls outside the reference text, then respond, “This is out of scope for me to answer”
 
