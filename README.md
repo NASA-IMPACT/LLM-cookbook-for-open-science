@@ -122,7 +122,7 @@ Viewing AI as a collaborative partner rather than a standalone solution emphasiz
 
 
 # Getting access to the workshop environment
-1. Get your credentials and other information using http://smd-ai-workshop-creds-webapp.s3-website-us-east-1.
+1. Get your credentials and other information using https://creds-workshop.nasa-impact.net/
 ![Get Credentials](images/credential.png)
 ![Credentials](images/credentials-show.png)
 2. Navigate to https://nasa-impact.awsapps.com/start#/ 
