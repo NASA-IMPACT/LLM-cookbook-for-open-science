@@ -508,8 +508,8 @@ The goals of this activity are to teach developers to create applications using 
 Both Earth scientists and astrophysicists need to complete advanced spatiotemporal searches to find focused data or observations. Earth scientists search for data about a specific phenomenon in a certain region over a specific period of time. For example, I want to find ozone data in the Los Angeles area in the year 2005. Astrophysicists search for data or observations about or around a specific object in space. For example, I want to find data within 1 arcminute of the Southern Ring nebula. Users new to astrophysics may want to know the cross identifications of an object in space while advanced users may want to search for publications about an object using associated bibcodes.
 
 For Earth science searches, we will use the [Common Metadata Repository (CMR)](https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html) to search for data. For astrophysics searches, we will use several services from [Astroquery](https://astroquery.readthedocs.io/en/latest/) (SIMBAD, ADS, etc…) to search for data and information.
-[Example 1: CMR](/notebooks/langchain-react-cmr.ipynb)
-[Example 2: Astro](notebooks/langchain-react-astro.ipynb)
+- [Example 1: CMR Agent](/notebooks/langchain-react-cmr.ipynb)
+- [Example 2: Astro Agent](notebooks/langchain-react-astro.ipynb)
 
 ## Approach
 
@@ -572,4 +572,4 @@ An encoder LLM model is fine-tuned by connecting task-specific layers to the pre
 
 A decoder LLM model is fine-tuned by providing the model with task-specific examples and training it to generate outputs that are relevant to the task. This process is best suited for tasks that require the model to generate free-form text based on the input, such as question answering, text generation, and dialogue systems and function calling. These models are best performing when they are used as standalone systems, where the model's output is the final output of the system. while fine tuning the decoder model end-to-end is prohibitively expensive and destroys the connections learned during pre-training, it is possible to fine-tune the model using low-rank adaptation (LoRA) techniques, in which only a small subset of the model's parameters are updated during training, there-by reducing the computational cost of fine-tuning the model, as well as preserving the model's original capabilities.
 
-[Notebook Example](/notebooks/EJ-metadataextraction.ipynb)
+[Notebook Example](/notebooks/EJ_extractions.ipynb)
