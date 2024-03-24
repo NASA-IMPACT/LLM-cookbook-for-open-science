@@ -1,0 +1,477 @@
+{
+    "code": {
+        "sharing": [
+            [
+                "A4.3.1 Ensure that the code is openly accessible",
+                "B4.3.1Ensure the code repository is set to \u2018public\u2019 in GitHub. [DE]"
+            ],
+            [
+                "A4.3.2 Ensure that the code has a persistent identifier and is discoverable with the data",
+                "B4.3.2a The code repository should be assigned a registered persistent identifier. Use Zenodo for assigning a new DOI. In rare cases that a DOI has been assigned via other mechanisms, ensure the DOI is uploaded to the repo. [DS] B4.3.2b Ensure the code identifier is added to the data product metadata. [DS] B4.3.2c Ensure the DOI is added to the Github citation file [DS + DE]"
+            ],
+            [
+                "A4.3.3 Ensure the code is documented",
+                "B4.3.3a Include a read me document that describes the purpose of the code and any system requirements [DE] B4.3.3b Include a brief \u2018About\u2019 description of the code that will be displayed towards the top of the repo page. The description should be no more than 325 characters or 50 words. [DS] Example \u2018About\u2019 text."
+            ]
+        ],
+        "generation_curation": [
+            [
+                "A4.2.1 Develop code in accordance with current best practices",
+                "B4.2.1 Use the IMPACT coding best practices [DE]"
+            ],
+            [
+                "A4.2.2 Ensure code is citable",
+                "B4.2.2a Create a clear, sufficiently descriptive name for your code repo [DE] B4.2.2b Create a citation file for all code with information identified in B4.1.6. [DS]"
+            ]
+        ],
+        "preservation": [
+            [
+                "A4.5.1 Preserve the code associated with the data product.",
+                "B4.5.1a Code for generating data products should be included in the AIP [DS] B4.5.1b Code for reading data products should be included in the AIP [DS]"
+            ]
+        ],
+        "use_reuse": [
+            [
+                "A4.4.2 Ensure code use constraints are provided",
+                "B4.4.2 Ensure the [license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) is included in the GitHub repository."
+            ]
+        ],
+        "monitoring": [
+            [
+                "A4.6.1 Generate relevant metrics related to the code repository",
+                "B4.6.1 Generate periodic metrics to include: [DE] GitHub Analytics Views Downloads Commits Number of contributors Number of followers Number of forks Tracking activity of Issues and Comments Number of referring sites"
+            ],
+            [
+                "A4.6.2 Ensure users have access to the code",
+                "B4.6.2 Conduct periodic check of repositories through automated or manual means to ensure code is open and accessible [DE]"
+            ]
+        ],
+        "plan_design": [
+            [
+                "A4.1.1 Identify relevant code associated with the data",
+                "B4.1.1a Create an inventory of the source code and/or libraries. This should include code used to create the data or code used to read, use, analyze or visualize the data. [DS +DE] B4.1.1b Determine which code are not restricted and are available for open release [DE]"
+            ],
+            [
+                "A4.1.2 Identify where the code will be hosted",
+                "B4.1.2 Select a source code versioning repository. IMPACT should use GitHub. [DE]"
+            ],
+            [
+                "A4.1.3 Select an open, permissive code license in line with open science requirements",
+                "B4.1.3 Use a permissive license with broad acceptance in the science community to share your code. This includes Apache License 2.0, the BSD 3-Clause \u201cRevised\u201d License, and the MIT License (ESDS Open Source Software Policy | Earthdata (nasa.gov)). Note that in the past, most IMPACT projects have used the Apache License 2.0. If submitting through the NASA center process, the Center Intellectual Property Counsel may provide guidance on which license to select. [DE]"
+            ],
+            [
+                "A4.1.4 Identify or develop a plan for how the repository and contributions will be managed long term. The plan should include a code of conduct and guidelines for contributing to the public repository.",
+                "B4.1.4a Determine if the code should be public where public is defined as code with no expectations for maintenance or accepting contributions versus open source where open source is traditional open source software code with external contributions. Code should always at a minimum be public. [DS + DE] B4.1.4b If the code is being managed as an open source repository, a plan should be developed that describes how contributions will be managed, how frequently the repo will be checked for contributions, how contributions will be checked for quality, etc\u2026[DS + DE] B4.1.4c A code of conduct for the repository should be provided. Use the Github code of conduct until NASA SMD guidance is available [DS + DE]"
+            ],
+            [
+                "A4.1.5 Identify the open source process required for the organization",
+                "B4.1.5 Ensure that NASA\u2019s Open Source paperwork has been submitted before code is written. Note that IMPACT is required to open source any software that is developed that is funded by NASA. Use the IMPACT Open Source Software process template based on the process outlined below: Login to https://softwarerelease.ndc.nasa.gov/ Select \u201cCreate a new software release package\u201d Click https://invention.nasa.gov/ and select Report your New NTR You will need Project information including a description and members Submit for approval Once approved your new software will appear in https://softwarerelease.ndc.nasa.gov/dashboard/ Fill out all the required details and submit for approval: you will need to zip the source code to upload You will get an email from the MSFC OSS group Save that email and periodically ask for status [DS]"
+            ],
+            [
+                "A4.1.6 Define the software citation",
+                "B4.1.6 Work with the code provider, the PI and others to come to a consensus on how the code should be cited. This should include identifying the main contributors to the code, the order of the contributors in the citation and the code name. [DS]"
+            ]
+        ]
+    },
+    "data": {
+        "sharing": [
+            [
+                "A1.3.1 Ensure data product identifiers are resolvable",
+                "B1.3.1a Check that the persistent identifier for the data resolves to the appropriate dataset landing page (see A3.1.1) The persistent identifier should be found somewhere on the landing page, but is ideally embedded in schema.org markup such as JSON-LD and/or using HTML meta tags. [DE] Example schema.org/JSON-LD: <application type=\"application/ld+json\"> {\"@id\": \"https://doi.org/10.5067/GHGMR-4FJ04\"} </application> Example HTML meta tags: <meta name=\"DC.identifier\" content=\"https://doi.org/10.5067/GHGMR-4FJ04\"> Please note: In the examples shown above, it should be the DOI url (i.e. https://doi.org/10.5067/GHGMR-4FJ04), not the DOI value (i.e., 10.5067/GHGMR-4FJ04). JSON-LD (JavaScript Object Notation for Linked Data) is a lightweight data interchange format used to structure and represent data on the web - W3C (World Wide Web Consortium) standard. B1.3.1b The landing page should use RDFa \u2013 lite semantic annotations (https://www.w3.org/TR/rdfa-lite/) [DE] RDF (Resource Description Framework) is a data model and framework for describing resources on the web and their relationships in a standardized way. RDFa (RDF in Attributes) is an extension of HTML that allows you to embed RDF data within HTML documents using attributes in the markup. Both RDF and RDFa are W3C standards. An example of including an open CC-BY-4.0 license: \u2026 <p>All content on this site is licensed under <a property=\"https://creativecommons.org/ns#license\" href=\"https://creativecommons.org/licenses/by/4.0/\"> a Creative Commons License</a>.</p> \u2026"
+            ],
+            [
+                "A1.3.2 Ensure policy-based access to data",
+                "B1.3.2 Implement enforcement of access restrictions [as specified in End User License Agreement (EULA) or SPD-41a Open Access] [DE]"
+            ],
+            [
+                "A1.3.3 Ensure all shared data products are self-describing with sufficient structural metadata for data use",
+                "B1.3.3 Use the Climate Forecast (CF) to provide structural metadata. Best practices for CF global metadata attributes are also available. [DS + DE]"
+            ],
+            [
+                "A1.3.4 Ensure all data product files are accessible (user registration may be required)",
+                "B1.3.4a Check that data access links are working [DE] B1.3.4b Check that data access APIs are working [DE] B1.3.4c Implement secure transfer protocol access in compliance with U.S. government policy [DE]"
+            ],
+            [
+                "A1.3.5 Ensure checksum and manifest file is available to users (for users to verify downloaded files)",
+                "B1.3.5 Place the manifest file with data (see Requirement A1.2.1 and A1.2.2) [DE]"
+            ]
+        ],
+        "generation_curation": [
+            [
+                "A1.2.1 Ensure complete and accurate ingest of data",
+                "B1.2.1a Obtain a manifest file from the data provider. The manifest file should contain total file numbers and checksums of individual files using an SHA algorithm (recommend at minimum SHA256) [DE] B1.2.1b Confirm number of ingested files matches source [DE] B1.2.1c Perform checksums and confirm match to source [DE] B1.2.1d Generate an ingest report [DE] An ingest report is a document that serves as a receipt verifying that the ingested data matches the manifest file from the data provider (see B1.2.1a). It should include a list of files with checksums, data volume, and date/time of ingest. This can be shared with the data provider if needed. The report should be in JSON format with key/value pairs"
+            ],
+            [
+                "A1.2.2 Ensure complete and accurate production of data",
+                "B1.2.2a Create checksums / manifest file during data production [DE] B1.2.2b Perform planned science quality checks for the data produced before release (see Requirement A1.1.11) [DE]"
+            ],
+            [
+                "A1.2.3 Validate that Planning and Design requirements (from Section A1.1) are met for data ingest and / or production",
+                "B1.2.3 Perform review demonstrating implementation has met the defined requirements from the planning phase (i.e. everything specified for Requirements A1.1.3 through A1.1.16; data format, file naming conventions, etc.) [DE]"
+            ],
+            [
+                "A1.2.4 Ensure data products are assigned persistent identifiers and cross-referenced if appropriate",
+                "B1.2.4 Include the persistent identifier (e.g. DOI) in the data product metadata [DS] ESDIS DOI Process: Follow the ESDS process when delivering data to a DAAC. DOIs should be reserved prior to the delivery of actual data to a DAAC. Detailed steps for registering/reserving DOIs with ESDS as well as updating a DOI are described in the ESDS DOI Process. Zenodo Process: Follow this process for data not going to a DAAC; More details on how to upload data to Zenodo are described in this Zenodo best practice document."
+            ]
+        ],
+        "preservation": [
+            [
+                "A1.5.1 Preserve data for long-term use following community standards and NASA data preservation policy",
+                "B1.5.1a Verify the degree of preservation compliance required for your project using Table 1 in the Preservation Content Specifications Implementation Guidance (PCS IG) document. [DS] Three levels of expected compliance are defined: Complete, Partial and Basic, based on different program types. With a few exceptions (e.g. CSDA), most IMPACT projects will be categorized as \u2018Partial.\u2019 If your project is under a different program or funding mechanism, follow that program\u2019s preservation requirements. B1.5.1b Organize access to the preservation content collected as required for the compliance degree identified. [DS] Necessary content is identified in Table 2 of the PCS IG document. At a minimum, the following information should be collected for all IMPACT projects including CSDA: Instrument and Platform Description, which should be included in DMP; Metadata, which should be embedded in the data product files; Product quality checks, flags and other quality information, which should be included in the data product guide; Published articles that use the data products; Final checklist that identifies the preservation content for each data product. Note the final preservation item is a deliverables checklist consisting of links to the collected documents."
+            ]
+        ],
+        "use_reuse": [],
+        "monitoring": [
+            [
+                "A1.6.1 Collect/monitor/report data usage metrics",
+                "B1.6.1a Implement metrics collection procedures (see Requirement A1.1.13 for metrics implementation plan) [DE] B1.6.1b Produce on a routine basis the metrics reports and distribute, quarterly reports recommended [DE] The same procedures also apply to A1.6.2 and A1.6.3"
+            ],
+            [
+                "A1.6.2 Collect/monitor data quality metrics",
+                ""
+            ],
+            [
+                "A1.6.3 Monitor data ingest and/or production metrics, as appropriate",
+                ""
+            ],
+            [
+                "A1.6.4 Conduct periodic review of metrics",
+                "B1.6.4 Review metrics routinely to assess operational performance [DS + DE]"
+            ]
+        ],
+        "plan_design": [
+            [
+                "A1.1.1 Define a data flow diagram with the purpose of identifying data sources and touchpoints for the project and for communicating to data users how data was handled.",
+                "B1.1.1 Create a data flow diagram extending from acquisition/creation to user delivery and add diagram to DMP. [DE] Example diagram:"
+            ],
+            [
+                "A1.1.2 Develop touchpoint agreements identified in the data flow diagram",
+                "B1.1.2 Create needed touchpoint agreements such as Interface Control Documents, (ICDs) / Submission Agreement (SA), Memorandum of Understanding (MOU),or Service Level Agreement (SLA). [DS + DE]"
+            ],
+            [
+                "A1.1.3 Adhere to community accepted standard machine readable data file formats",
+                "B1.1.3 Select standard machine-readable data file format(s) from NASA Approved Data Formats [DS] The EOSDIS Data Product Development Guide for Data Producers - Quick Start Guide prefers the following data formats: netCDF-4 and GeoTIFF. Cloud Optimized GeoTIFF (COG) and Zarr are the preferred Cloud-based formats"
+            ],
+            [
+                "A1.1.4 Identify and document all data product characteristics",
+                "B1.1.4 Create a data sheet using the following template: Data Sheet Template. Add additional data characteristics as needed for each project. [DS]"
+            ],
+            [
+                "A1.1.5 Adhere to community best practice(s) on data file naming conventions",
+                "B1.1.5 Define and document file naming conventions using following guidelines: GHRC File Naming convention [DS]"
+            ],
+            [
+                "A1.1.6 Adhere to community standard variable names, types, and unit(s), keywords",
+                "B1.1.6 Utilize standard variable(s), types, and unit(s) such as CF convention [DS]"
+            ],
+            [
+                "A1.1.7 Adhere to community standards for coordinate systems",
+                "B1.1.7 Utilize coordinate reference systems (CRS) from this list (https://epsg.io/) [DE] Recommended global CRS: 2-dimensional World Geodetic System 1984 (WGS 84) (Lat/Long): EPSG:4326 WGS 84 World Mercator: EPSG:3395 WGS 84 Pseudo-Mercator: EPSG:3857 3-dimensional WGS 84 (Lat/Long/Elevation): EPSG:4979 Recommended CRS for data over polar regions: WGS 84 Arctic Polar Stereographic: EPSG:3995 NSIDC Sea Ice Polar Stereographic North: EPSG:3413 NSIDC Sea Ice Polar Stereographic South: EPSG:3976"
+            ],
+            [
+                "A1.1.8 Adhere to community standards for map projections",
+                "B1.1.8 Utilize map projections from this list (https://epsg.io/) [DE]"
+            ],
+            [
+                "A1.1.9 Adhere to community standards for date and time formats",
+                "B1.1.9 Utilize data and time formatting from ISO 8601 [DE]"
+            ],
+            [
+                "A1.1.10 Define a data product versioning scheme",
+                "B1.1.10 Represent the data product version with an ordinal identifier (e.g., 1, 2, 3, etc.) that expresses its position in a series of data product publications. The data product version can be represented with both a major and minor version identifier (e.g., 2.1, 2.2, etc.). (Reference: see Section 4.3 of the Data Product Development Guide for Data Producers) [DE]"
+            ],
+            [
+                "A1.1.11 Define a science quality evaluation plan for data products",
+                "B1.1.11 Develop the characteristics of the science quality evaluation needed for each data product [DS] Suggested: Univariate visualization of each field in the raw dataset, with summary statistics and Fill Values, Mask Values"
+            ],
+            [
+                "A1.1.12 Develop a data retention plan including a process for when and how data will be sunset",
+                "B1.1.12 Create a data retention plan that includes information about the end of project preservation plan and rolling archive plans. Use the CSDA data retirement policy template as needed. [DS]"
+            ],
+            [
+                "A.1.1.13 Define metrics to be collected along the following dimensions: Data use (search and access) Data quality Data/information (quality) profile Data Processing Ingest Data Access APIs/Services",
+                "B1.1.13 Develop a metrics implementation plan. [DE] Recommended minimum metrics: Data Use Metrics Data Product Search frequency S3 Bucket Access frequency Data download counts Information/Data Profile: Data completeness Metadata completeness Data lineage completeness Data Quality Checksum validation Data Processing Processing time Processing throughput Error rate Resource utilization Ingest: Ingest rate Ingest completeness / volume Ingest error rate Data Access APIs/Services: Service availability Service usage Service response time Service error rate"
+            ],
+            [
+                "A1.1.14 Identify the most appropriate data license for the data product",
+                "B1.1.14 If there are no other restrictions, SMD scientific data should be released with a Creative Commons Zero license. [DS]"
+            ],
+            [
+                "A1.1.15 Determine content and format for the dataset landing page",
+                "B1.1.15 Design dataset landing page format and content. Recommend using the IMPACT data product landing page design. [DS] Note that dataset landing pages can be automatically generated using UMM metadata (published to CMR) and STAC metadata (using STAC Browser). All information needed in the dataset landing page should be included in the metadata."
+            ],
+            [
+                "A1.1.16 Determine whether API-based data access is needed & if so, identify an API standard",
+                "B1.1.16a Refer to your system design as to whether an API-based data access is needed. [DE] For example, databases that store vector data should have an API. B1.1.16b If an API doesn\u2019t already exist for the data being distributed, select an appropriate OGC API standard to use (also see Requirement A1.4.2). For raster and map content, use OGC API - Maps. For vector and tile data, use OGC API - Tiles. Also consider using OGC API - Features as needed.[DE]"
+            ]
+        ]
+    },
+    "digital_content": {
+        "sharing": [
+            [
+                "A3.3.1 All the information and documents identified in B3.2.1 should be openly accessible",
+                "B3.3.1a Ensure all information and documentation are made publicly accessible using this Zenodo best practices guide [DS + DE] B3.3.1b Ensure all web content is 508 compliant in order to be accessible to those with disabilities (508 compliance checkers: Microsoft documents; PDF in Adobe Acrobat; Web Pages; Checklist). [DS + DE]"
+            ],
+            [
+                "A3.3.2 All the web content should have semantic annotations",
+                "B3.3.2 Ensure all web pages use RDFa Lite for semantic annotations [DE]"
+            ],
+            [
+                "A3.3.3 All the documents created for the information identified in B3.2.1 should be assigned a persistent identifier",
+                "B3.3.3 If not assigned by NASA, obtain a Zenodo account and publish your documents to Zenodo to get a DOI [DS]"
+            ],
+            [
+                "A3.3.4 Ensure documents are assigned an open license",
+                "B3.3.4a Select \u2018open access\u2019 for the Access rights in Zenodo. Open access documents have higher visibility in Zenodo. [DS] B3.3.4b Leverage the Creative Commons Attribution 4.0 International license in Zenodo for open access documentation. [DS] B3.3.4c Ensure the documents are added to the IMPACT community in Zenodo. [DS]"
+            ]
+        ],
+        "generation_curation": [
+            [
+                "A3.2.1 Gather or create the information needed to describe and use the data",
+                "B3.2.1 Gather, or create if not available, the minimum information to support the use of the data as described in B3.1.1 [DS]"
+            ]
+        ],
+        "preservation": [
+            [
+                "For retired data products, provide web content with the statement that the data product is no longer available and provide a link to a newer or relevant data product if possible",
+                "B3.5.2 Update the webpage so that the metadata is retained and the DOI continues to resolve to an information page \\[DE\\]"
+            ]
+        ],
+        "use_reuse": [],
+        "monitoring": [
+            [
+                "A3.6.1 Develop a plan to review and maintain information and documentation to ensure they are up-to-date.",
+                "B3.6.1 Conduct annual check of documents through automated or manual means ( schedule annual documentation review for new or updated information, script to check links in documentation, etc.) [DS+DE]"
+            ],
+            [
+                "A3.6.2 Monitor usage statistics of documents",
+                "B3.6.2 Leverage Zenodo metrics or equivalent to understand document views and usage. Zenodo metrics include [DS] Views Downloads Unique views Unique downloads Citations"
+            ]
+        ],
+        "plan_design": [
+            [
+                "A3.1.1 Determine the information that is needed to describe and use the data",
+                "B3.1.1 Identify the following minimum information needed to support the use of the data and plan/schedule how this information will be produced (e.g. gather from existing resources, create new documents, etc.). [DS] This includes information on: How the data was collected or generated. This includes Processing and Algorithm Version History, Data Product Generation Algorithms, Data Product Quality, Science Data Product Software, Science Data Product Algorithm Inputs, Science Data Product Validation. Most of this information can be included in the ATBD using APT but more detailed documents may be required depending on the use case. How to use the data (Science Data Access and Analysis Tools such as user guides, jupyter notebooks and code), Important contextual information (Instrument and Platform Description, Instrument and Science Team Information, On-orbit, in-flight, in-the-field calibration methods, project/mission/field campaign) Any Disclaimer information including EULA or licensing agreements text as required Any project specific acknowledgement text as required Note that gathering and maintaining this information also ensures the project meets any preservation requirements."
+            ],
+            [
+                "A3.1.2 Define how the information will be retained",
+                "B3.1.2a Create a retention plan for documentation and information / digital content, including what to retain and where it will be stored [DS] Use agreed-upon document repository for baselining and storing documents for your project B3.1.2b Ensure that the scope for the Archived Info Package (AIP) described in B2.5.1b includes information and digital content generated about the data [DS]"
+            ],
+            [
+                "A3.1.3 Define the object citation",
+                "B3.1.3 Work with the creators and others to come to a consensus on how the object should be cited. This should include identifying the main contributors to the object, the order of the contributors in the citation and the object name. [DS]"
+            ]
+        ]
+    },
+    "metadata": {
+        "sharing": [],
+        "generation_curation": [
+            [
+                "A2.2.1 Provide the metadata specification information in the collection level metadata",
+                "B2.2.1a: UMM: Populate the \u2018MetadataSpecification\u2019 element. The Metadata Specification element requires the user to add in schema information into every collection record. It includes the schema's name, version, and URL location. [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Metadata+Specification+for+UMM-C B2.2.16b: STAC: Provide a value of \u201cCollection\u201d in the STAC \u2018type\u2019 element and the version of STAC the Collection implements in the \u2018stac_version\u2019 element. [DS + DE]"
+            ],
+            [
+                "A2.2.2 Provide the data product title in the collection level metadata",
+                "B2.2.2a UMM: Populate the \u2018EntryTitle\u2019 element. The Entry Title should be a descriptive, formal title of the dataset (see B2.1.3). [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Entry+Title B2.2.2b STAC: Provide the data product title in the \u2018title\u2019 element. [DS + DE]"
+            ],
+            [
+                "A2.2.3 Provide the DOI information in the collection level metadata",
+                "B2.2.3a UMM: Include the DOI itself and the authority information in the DOI element. The authority for most metadata is https://doi.org/. In most cases, a DOI should be provided (i.e. \u2018MissingReason is not an option). More information on DOI best practices for UMM can be found here: https://wiki.earthdata.nasa.gov/display/CMR/DOI [DS] B2.2.3b STAC: Leverage the Scientific Citation Extension Specification and the \u2018sci:doi\u2019 element within that specification. This element is meant to contain the DOI value of the data, e.g. 10.1000/xyz123. This MUST NOT be a DOI link. [DS + DE]"
+            ],
+            [
+                "A2.2.4 Provide the abstract information in the collection level metadata",
+                "B2.2.4a UMM: Include the abstract, or dataset description, in the \u2018Abstract\u2019 element. The Abstract should provide a brief description of the resource the metadata represents.The abstract should summarize the dataset and mimic a journal abstract that is useful to the science community, but is also approachable for a first time user of the data. [DS] More information on abstract best practices for UMM can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Abstract B2.2.4b STAC: Include the abstract, or dataset description, in the \u2018description\u2019 element for the collection specification. [DS + DE]"
+            ],
+            [
+                "A2.2.5 Provide information on the organization responsible for originating, processing, archiving, and/or distributing the dataset in the collection level metadata",
+                "B2.2.5a UMM: Include information on the organization responsible for originating, processing, archiving, and/or distributing the dataset in the \u2018DataCenter\u2019 element. The organization name must be selected from the GCMD provider list. The role of the organization must be selected from the following values: DISTRIBUTOR, ORIGINATOR, ARCHIVER, PROCESSOR. \u2018NASA/IMPACT\u2019 is a project in the GCMD provider list. This enumeration should be used for UMM Data Center information when IMPACT is the originator of the data. Selection of the role will depend on the individual project\u2019s needs. [DS] For example, for the HLS data products, the role of NASA/IMPACT is \u2018PROCESSOR.\u2019 More details on the Data Center options and best practices for UMM can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Data+Center B2.2.5b STAC: Include the data center information in the \u2018providers\u2019 element [Provider Object] using the Collection specification. When possible, use the GCMD provider list enumeration in the \u2018name\u2019 element of the Provider Object. The \u2018roles\u2019 element should also be provided. Roles in STAC are: licensor, producer, processor or host. [DS]"
+            ],
+            [
+                "A2.2.6 Provide the data processing level in the collection level metadata",
+                "B2.2.6a UMM: Provide the data processing level in the \u2018ProcessingLevel\u2019 element. The data processing level should align with the EOSDIS data processing level whenever possible. [DS] More details on the EOSDIS data processing level can be found here: https://earthdata.nasa.gov/earth-science-data-systems-program/policies/data-information-policy/data-levels. More details on data processing level best practices can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Processing+Level B2.2.6b STAC: Provide the processing level using the \u2018processing:level\u2019 element using the processing extension (https://github.com/stac-extensions/processing) for Collections. [DS + DE]"
+            ],
+            [
+                "A2.2.7 Provide the data product production status in the collection level metadata",
+                "B2.2.7a UMM: Provide the collection production status in the \u2018CollectionProgress\u2019 element. Leverage the Collection Progress controlled vocabulary to describe the production status of the dataset. [DS] More info and the controlled vocabulary list can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Collection+Progress B2.2.7b TBD: STAC: The best practice for providing the collection progress using the STAC Collection spec is still TBD. [DS + DE]"
+            ],
+            [
+                "A2.2.8 Provide science keywords applicable to the data product in the collection level metadata",
+                "B2.2.8a UMM: Populate science keywords using the \u2018ScienceKeywords\u2019 element. Science keywords should represent the scientific parameters being provided in the data as well as any broader conceptual terms that may aid in describing the data. [DS] The Science Keywords are chosen from a controlled keyword hierarchy. More information on science keyword best practices can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Science+Keywords B2.2.8b STAC: The \u2018keywords\u2019 element in the Collection specification should be used to provide science keywords. Science keywords should be selected from the GCMD science keywords list. [DS + DE]"
+            ],
+            [
+                "A2.2.9 Provide the temporal extent of the data in the collection level metadata",
+                "B2.2.9a UMM: Dates provided in CMR metadata should comply with the ISO 8601 Standard, which is an International Standard for the representation of dates and times. Select from one of three options in the UMM for describing the temporal extent of data: Single Date Time, Range Date Time and Periodic Date Time. More specific details on each of these options can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Temporal+Extents [DS + DE] B2.2.9b STAC: The temporal information should be provided in the Extent Object -> Temporal Extent Object. If the data has an open range (e.g. active/ongoing collection), this can be specified by setting the start and/or end time to \u201cnull\u201d. For example, [[\"2019-01-01T00:00:00Z\", null]]. Timestamps should consist of a date and time in UTC and MUST be formatted according to RFC 3339, section 5.6. The temporal reference system is the Gregorian calendar. [DS + DE]"
+            ],
+            [
+                "A2.2.10 Provide the spatial extent of the data in the collection level metadata",
+                "B2.2.10a UMM: Determine what type of spatial extent is being described in the metadata. In the CMR, there is the option to describe the horizontal, vertical, and orbital spatial coverage of a dataset along with its coordinate system and resolution. [DS] More details on each type can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Spatial+Extent For horizontal spatial extents, select an option that best describes the coverage of the data product. The four options in the CMR include: point, bounding rectangle, gpolygon and line. More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Spatial+Extent Determine whether any other spatial extent metadata (horizontal spatial resolution, geodetic model, etc) should be included in the metadata. B2.2.10b STAC: The spatial information should be provided in the Extent Object -> Spatial Extent Object. The first bounding box always describes the overall spatial extent of the data. All subsequent bounding boxes can be used to provide a more precise description of the extent and identify clusters of data. The coordinate reference system of the values is WGS 84 longitude/latitude. [DS + DE]"
+            ],
+            [
+                "A2.2.11 Provide the platform information (and optionally, instrument information) in the collection level metadata",
+                "B2.2.11a UMM: Provide the platform information using the \u2018Platform\u2019 element. Ensure all relevant platforms are listed in the metadata. [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Platform. If applicable, it is also recommended that instruments/sensors be provided as well using the \u2018Instrument\u2019 element. More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Instrument. The Platform name(s) must be selected from the GCMD Platform keyword list and Instrument/Sensor names must be selected from the GCMD Instruments keyword list. If a platform is not listed, a new keyword may be requested through the GCMD Keywords Community Forum. B2.2.11b TBD: STAC: Provide platform and optionally instrument information using the \u2018summaries\u2019 element in the Collection spec. Instructions on how to appropriately do this is TBD (example: https://github.com/radiantearth/stac-spec/blob/master/examples/collection.json#L45) [DS + DE]"
+            ],
+            [
+                "A2.2.12 Provide resource related URLs in the collection level metadata",
+                "B2.2.12a UMM: Provide links to all relevant documentation in the collection level metadata. A complete list of relevant documentation can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Related+URLs. Any documentation created in either the \u2018data\u2019 \u2018code,\u2019 or \u2018information content\u2019 activities should also be included here. Describe each URL using the guidance provided here: https://wiki.earthdata.nasa.gov/display/CMR/Related+URLs [DS] B2.2.12b STAC: Provide links to all relevant information in the Link Object -> \u2018href\u2019 and \u2018rel\u2019 elements. Provide the actual link in the \u2018href\u2019 element. The \u2018ref\u2019 element describes the relationship between the collection and the URL. More information on relationships can be found here. [DS + DE]"
+            ],
+            [
+                "A2.2.13 Provide a unique identifier for the data product in the collection level metadata",
+                "B2.2.13a UMM: A unique identifier for the data product should be provided in the \u2018ShortName\u2019 element. This should take the form of a shortened or abbreviated name of the data product. [DS] More details on short name best practices can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Short+Name B2.2.13b STAC: A unique identifier for the data product should be provided in the \u2018id\u2019 element. [DS + DE]"
+            ],
+            [
+                "A2.2.14 Provide the data product version in the collection level metadata",
+                "B2.2.14a UMM: Provide the data product version number in the collection level metadata using the \u2018Version\u2019 element. [DS] More detailed information can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Version B2.2.14b TBD: STAC: The best practice for providing the data product version using the STAC Collection spec. [DS + DE]"
+            ],
+            [
+                "A2.2.15 Provide the data product license information in the collection level metadata",
+                "B2.2.15a UMM: Provide the license information in the \u2018UseConstraints\u2019 element. At a minimum, it is recommended that a link to the relevant license be provided in the \u2018UseConstraints/LicenseURL/Linkage\u2019 field. [DS] Additional info and other options for providing the license information can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Use+Constraints Note: If a EULA identifier is available, linked it to the UMM-C under the \u2018UseConstraints/EULAIdentifiers\u2019 field. B2.2.15b STAC: Provide the license using the \u2018license\u2019 element. The license should be selected from the SPDX License identifier list: https://spdx.org/licenses/. Provide \u201cvaries\u201d if multiple licenses apply and \u201cproprietary\u201d for all other cases. The default value for an open license should be \u201cCC0-1.0\u201d unless otherwise specified. [DS + DE]"
+            ],
+            [
+                "A2.2.16 Provide a unique identifier in the granule level metadata",
+                "B2.2.16a UMM: Provide the universal reference identifier of the granule in each metadata record using the \u2018GranuleUR\u2019 element. Typically, the Granule UR will match the granule's file name. However, other identifying information may be included. The UR must be completely unique when compared to all other data from the same provider (i.e. datasets with the same provider Id in CMR). [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Granule+UR B2.2.16b STAC: Provide a unique identifier for the file/layer/granule in the STAC Item spec \u2018id\u2019 field. [DS + DE]"
+            ],
+            [
+                "A2.2.17 Provide a date indicating when the granule metadata was created in the granule level metadata",
+                "B2.2.17a UMM: At least one provider date is required for granule metadata in the CMR. The \u2018ProviderDates\u2019 element presents dates associated with changes made to the granule in the database where it is stored. The Provider Dates include the date the granule was created, inserted, or updated in its database, and the date the granule metadata will be deleted from the CMR. It is highly recommended that the \u2018Create\u2019 date be included. [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Provider+Dates B2.2.17b STAC: Provide the date the Item record was created using \u2018properties > created\u2019 https://github.com/radiantearth/stac-api-spec/blob/main/stac-spec/item-spec/common-metadata.md#date-and-time [DS + DE]"
+            ],
+            [
+                "A2.2.18 Provide a reference to the associated collection in the granule level metadata",
+                "B2.2.18a UMM: The Collection Reference identifies the collection to which the granule belongs. This is done by providing the collection's Short Name and Version Id, or the collection's Entry Title in the \u2018CollectionReference\u2019 element. [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Collection+Reference B2.2.18b STAC: Provide the id of the associated STAC Collection in the \u2018collection\u2019 element. [DS + DE]"
+            ],
+            [
+                "A2.2.19 Provide the metadata specification information in the granule level metadata",
+                "B2.2.19a UMM: Populate the \u2018MetadataSpecification\u2019 element. The Metadata Specification element requires the user to add in schema information into every granule record. It includes the schema's name, version, and URL location. [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Metadata+Specification B2.2.19b: STAC: Provide a value of \u201cFeature\u201d in the STAC \u2018type\u2019 element and the version of STAC the Item implements in the \u2018stac_version\u2019 element. [DS + DE]"
+            ],
+            [
+                "A2.2.20 Provide the temporal extent information in the granule level metadata",
+                "B2.2.20a UMM: File level temporal extent information is not required per UMM but is highly recommended to enable more targeted discovery. Ensure file level temporal information does not contradict collection level information. [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Temporal+Extents B2.2.20b STAC: The temporal information should be provided in the Properties Object -> \u2018datetime\u2019 element. If the file can be represented as a single datetime, the time stamp can be provided directly in the \u2018datetime\u2019 element. If the temporal extent is a temporal range, then a value of \u201cnull\u201d should be provided in \u2018datetime\u2019 followed by the \u2018start_datetime\u2019 and \u2018end_datetime\u2019 elements. Timestamps should consist of a date and time in UTC and MUST be formatted according to RFC 3339, section 5.6. [DS + DE]"
+            ],
+            [
+                "A2.2.21 Provide the spatial extent information in the granule level metadata",
+                "B2.2.21a UMM: File level spatial extent information is not required per UMM but is highly recommended to enable more targeted discovery. For specific files or granules, the spatial extent describes the area covered by that individual file. Ensure file level spatial information does not contradict collection level information. [DS] More details can be found here: https://wiki.earthdata.nasa.gov/display/CMR/Spatial+Extent B2.2.21b STAC: The spatial information should be provided using either the \u2018geometry\u2019 element or the \u2018bbox\u2019 element. Use \u2018geometry\u2019 to provide a GeoJSON footprint, formatted according to RFC 7946, section 3.1. The footprint should be the default GeoJSON geometry, though additional geometries can be included. Coordinates are specified in Longitude/Latitude or Longitude/Latitude/Elevation based on WGS 84. If \u2018geometry\u2019 is set to \u201cnull\u201d, then providing a \u2018bbox\u2019 is required. The bbox should be formatted according to RFC 7946, section 5. [DS + DE]"
+            ],
+            [
+                "A2.2.22 Provide a link to access the data in the granule level metadata",
+                "B2.2.22a UMM: A link to access the data described by the granule metadata is not required per UMM but is highly recommended to enable data access. This link is provided in the \u2018RelatedURLs\u2019 element. The link goes in the \u2018RelatedURLs -> URL\u2019 field, and this must be accompanied by a \u2018RelatedURLs -> Type\u2019 value of \u201cGET DATA\u201d. An optional \u2018Subtype\u2019 can be provided to further describe the nature of the URL. It is recommended that the link also be accompanied by a description. [DS] Additional details can be found here: RelatedURLs (Granules) B2.2.22b STAC: There are two required STAC elements to consider here. First is the \u2018links\u2019 element which is a list of Link Objects to resources and related URLs. At minimum, a link with the \u2018rel\u2019 set to \u201cself\u201d is strongly recommended. It is encouraged that links pointing to other related STAC resources are also provided, such as a link to the associated collection and root or parent entity. Additional information can be found here: Link Object. The second is the \u2018assets\u2019 element which is a dictionary of Asset Objects that can be downloaded, each with a unique key. This element is key to facilitating data access, as it contains a URI to data associated with the Item that can be downloaded or streamed. Details can be found here: Asset Object [DS + DE]"
+            ],
+            [
+                "A2.2.23 Preserve data provenance (preserve metadata from original source, and data editing history)",
+                "B2.2.23a TBD: UMM: Implementation procedure for data provenance. B2.2.23b TBD: STAC Implementation procedure for data provenance"
+            ]
+        ],
+        "preservation": [
+            [
+                "A2.5.1 Ensure the metadata record and dataset landing page is always accessible when a data set is being preserved (Ex: end of project, going from active to static)",
+                "B2.5.1a Test to ensure the metadata record and dataset landing page are accessible [DE] B2.5.1b Ensure that the metadata record and dataset are included in the archived information package (AIP). An AIP is the set of content and metadata to be archived at and managed by a preservation repository. [DS]"
+            ],
+            [
+                "A2.5.2 Ensure metadata meets a defined level of quality and remains up to date",
+                "B2.5.2a Regularly make needed changes to the metadata in order to ensure a baselined level of quality. At a minimum, all mandatory metadata fields should pass pyQuARC quality checks. Additional manual quality checking can be conducted on an as-needed basis to ensure the information in the metadata is up to date. [DS] B2.5.2b Add content to new elements added as a part of any schema changes. Update existing metadata fields as needed to ensure schema compliance. [DS]"
+            ],
+            [
+                "A2.5.3 If data is retired and no longer accessible, ensure the metadata record and dataset landing page is updated to indicate the data is retired. The metadata and landing page should remain accessible. If a new version of the data is available, the landing page should point to the new version.",
+                "B2.5.3a For data no longer accessible, update metadata record to contain retired information and new version availability if applicable. [DS] B2.5.3b For data no longer accessible, test to ensure the metadata record and dataset landing page remain accessible [DS + DE]"
+            ]
+        ],
+        "use_reuse": [],
+        "monitoring": [
+            [
+                "A2.6.1 Monitor and report metadata quality metrics",
+                "B2.6.1 Use pyQuARC to generate metadata quality metrics. QuARC is also available via an API. [DE]"
+            ],
+            [
+                "A2.6.2 Monitor changes to the metadata schema used",
+                "B2.6.2a Update the schema to the latest version. More information on UMM schemas can be found here. More information on the STAC specification can be found here. [DE] B2.6.2b Update the content for each metadata record to be compliant with the new schema changes [DS+DE]"
+            ],
+            [
+                "A2.6.3 Monitor changes to controlled vocabularies",
+                "B2.6.3a Update controlled vocabulary keywords in metadata (e.g., GCMD; CF); [DS] B2.6.3b Remove deprecated keywords, as needed [DS + DE]"
+            ]
+        ],
+        "plan_design": [
+            [
+                "A2.1.1 Adhere to a standard metadata schema for data product (collection) and file (granule) level metadata",
+                "B2.1.1 Utilize the UMM or STAC schema [DS + DE] UMM schema: UMM Schemas STAC Spec: STAC Spec"
+            ],
+            [
+                "A2.1.2 Support mandatory metadata elements in the selected schema",
+                "B2.1.2a UMM: Ensure that the metadata schema includes the following: [DS] UMM Collection-Level mandatory fields: Metadata Specification, Entry Title, DOI, Abstract, Data Center, Processing Level, Collection Progress, Science Keywords, Temporal Extents, Spatial Extent, Platform, Related URL, Short Name, Version UMM Granule-Level mandatory fields: Granule UR, Provider Dates, Collection Reference, Metadata Specification B2.1.2b STAC: Ensure that the metadata schema includes the following: [DS] STAC Collection-Level mandatory fields: type, stac_version, id, description, license, extent, links STAC Granule(Item)-Level mandatory fields: type, stac_version, id, geometry, bbox, properties, links, assets"
+            ],
+            [
+                "A2.1.3 Utilize a standard data product naming convention",
+                "B2.1.3 Use the ARC guidelines when developing a data product naming convention - \u201cThe Entry Title should be a descriptive, formal title of the dataset. The Entry Title should not be the same as the Short Name element. It is recommended that the Entry Title follow a mixed case capitalization scheme and that the use of special characters (such as underscores) and acronyms be kept to a minimum, if possible. In order to make titles descriptive, important elements about the data may be included, such as: parameters measured, geographic location, instrument, project, temporal coverage, etc.\u201d Link for more info https://wiki.earthdata.nasa.gov/display/CMR/Entry+Title [DS]"
+            ],
+            [
+                "A2.1.4 Identify any needed additional metadata fields for specific projects",
+                "B2.1.4a UMM: Review entire schema and determine what optional elements are needed. Where available, use existing optional elements. If needed, leverage custom UMM Additional Attribute fields. For example, the MAAP project developed SAR specific elements that were implemented as Additional Attributes. [DS] B2.1.4b STAC: Review the available STAC extensions. [DE?] Extensions should be selected using the following criteria: Relevance to the data being described. Projection, item assets, electro-optical (EO), raster and SAR are commonly used extensions. Maturity of the STAC extension. Only mature extensions (pilot, candidate or stable) should be utilized."
+            ],
+            [
+                "A2.1.5 Incorporate any access control fields into the metadata, as required",
+                "B2.1.5a UMM: Utilize the \u2018Access Constraints\u2019 element to define constraints as needed. https://wiki.earthdata.nasa.gov/display/CMR/Access+Constraints [DS] B2.1.5b TBD: STAC: The best practice for providing Access Constraints using the STAC Collection spec is still TBD. [DS + DE]"
+            ],
+            [
+                "A2.1.6 Define the data product citation",
+                "B2.1.6 Work with the data provider, the principal investigator (PI), or others to come to a consensus on how the data product should be cited. This should include identifying the main contributors to the data product, the order of the contributors in the citation and the data product name. [DS] Citation should include: Author(s) or project name(s): The people or organizations responsible for the intellectual work to develop the data product Date published: When the particular version of the data set was first made available for use Title: The formal title of the data set Release version: Current data version Repository: The name of the entity that holds, archives, publishes, distributes, or releases the data DOI: Resolvable persistent identifier that provides the ability to access data Access date: Date of online data were accessed Resource type: [dataset] Sources: AGU Data and Software Citation; ESIP Data Citation Guidelines for Earth Science Data"
+            ]
+        ]
+    },
+    "resources/people": {
+        "plan_design": [
+            [
+                "A6.1.1 Schedule training needs for data stewards and data engineers",
+                "B6.1.1 Develop onboarding materials for use in training data stewards and data engineers [DS+DE] Common: Introduction to Data Management and Sharing Open Science 101 (coming December 2023) Explore Earthdata Website and Wiki Data stewards: Metadata training (coming soon) SPD-41a and - open-source science guidance document Data Engineers Basic cloud (AWS) training"
+            ]
+        ]
+    },
+    "resources/storage": {
+        "sharing": [],
+        "generation_curation": [
+            [
+                "A5.2.2 Create the data storage environments indicated in the storage plan (A5.1.4)",
+                "B5.2.2 Create the different buckets based on the storage plan A5.1.4 \\[DE\\]"
+            ],
+            [
+                "A5.2.3 Create storage policy for retention rules",
+                "B5.2.3 Create the retention rules using the AWS (link to tutorial) \\[DE\\]"
+            ],
+            [
+                "A5.2.4 Create AWS policies for controlling the volume of data that end users or applications may download.",
+                "B5.2.4 Create the egress throttling rules using AWS \\[DE\\]"
+            ]
+        ],
+        "preservation": [],
+        "use_reuse": [],
+        "monitoring": [
+            [
+                "A5.6.2 Monitor storage usage and develop storage alerts to inform responsible parties when thresholds are exceeded",
+                "B5.6.2 Use CloudWatch to monitor storage use and set up alerts \\[DE\\]"
+            ]
+        ],
+        "plan_design": [
+            [
+                "A5.1.1 Define storage metrics to be collected",
+                "B5.1.1 Implement bucket inventories and associated detailed metrics [DE]"
+            ],
+            [
+                "A5.1.2 Develop storage and egress cost estimates",
+                "B5.1.2 Use data sheet (B1.1.4) to generate storage and egress costs using this calculator. Costs to consider include total product size, whether redundant storage for operations and backup/archive are require], projected growth, and estimated use[DE] ESDIS template"
+            ],
+            [
+                "A5.1.3 Define the S3 Bucket structure including the naming convention, tagging, logs, etc.",
+                "B5.1.3 Adopt these best practices for key aspects of cloud storage [DS + DE]"
+            ],
+            [
+                "A5.1.4 Define data storage environments needed such as sandbox, development, staging, production (operational + backup copies)",
+                "B5.1.4 Recommend creating a minimum of three storage environments - sandbox, development/staging and production. [DE]"
+            ],
+            [
+                "A5.1.5 Define storage policy for retention including the rules for defining which storage class to use and when the storage class should be changed",
+                "B5.1.5 For a rolling archive with capped storage capacity, use information in the best practices document. [DE] If selected metrics show that the usage for a dataset is below a threshold, then the dataset should be moved to cold storage or deleted Storage class can be changed manually (s3 cli) or by setting bucket specific rules. These rules or changes should be cost based (or time based) - need to determine at what usage it becomes more costly to store and retrieve from \u201ccolder\u201d storage class versus keeping data in \u201cwarmer class\u201d (i.e. <~40% of total dataset egress it becomes cheaper to use IA vs standard storage)"
+            ],
+            [
+                "A5.1.6 Define storage policy for retiring data",
+                "B5.1.6 The retired dataset should be moved to cold storage or deleted [draft CSDA retirement document [DE]"
+            ]
+        ]
+    }
+}

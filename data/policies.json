@@ -1,0 +1,36 @@
+{
+    "SPD41a": [
+        "SPD-41a Policy Requirement",
+        "Data shall be made publicly available, free in open, machine-readable formats [III.C.ii\u2013iv]",
+        "SMD-funded data shall be reusable with a clear, open, and accessible data license [III.C.vii]. (If there are no other restrictions, SMD scientific data should be released with a Creative Commons Zero license.)",
+        "Publicly available SMD-funded data collections shall be citable using a persistent identifier [III.C.viii]",
+        "SMD-funded data shall include robust, standards-compliant metadata that clearly and explicitly describe the data [III.C.vi]",
+        "SMD-funded data shall be findable, such that the data can be retrieved, downloaded, indexed, and searched [III.C.v]",
+        "SMD-funded data collections shall be indexed as part of the NASA catalog of data [III.C.ix]",
+        "SMD-funded data should follow the FAIR Guiding Principles [III.C.i]",
+        "The SMD repository provides documentation on policies for data retention [Appendix D.11.]",
+        "If there are no other restrictions, publicly available SMD-funded software should be released under a permissive license that has broad acceptance in the community [III.D.iii]",
+        "Publicly available SMD-funded software shall be citable using a persistent identifier [III.D.vii]"
+    ],
+    "FAIR": [
+        "FAIR Guiding Principle",
+        "F1 - Persistent identifier (PID)",
+        "F2 - Rich metadata",
+        "F3 - Linked PID",
+        "F4 - Searchable",
+        "",
+        "A1 - Retrievable",
+        "A1.1 - Protocol",
+        "A1.2 - Procedure (authentication and authorization)",
+        "A2 - Permanent metadata record",
+        "",
+        "I1 - Language (knowledge representation)",
+        "I2 - Vocabulary",
+        "I3 - Reference",
+        "",
+        "R1 - Attributes",
+        "R1.1 - License",
+        "R1x .2 - Provenance",
+        "R1.3 - Community standards"
+    ]
+}
