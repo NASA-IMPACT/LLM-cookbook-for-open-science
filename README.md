@@ -541,6 +541,7 @@ Link to Promptlab: [Promptlab](https://flow.promptlab.nasa-impact.net/)
 ### OSDR Chatbot
 
 **Goal**
+
 Demonstrate rapid prototyping with LangFlow using a RAG chatbot for the Open Science Data Repository (OSDR). The OSDR provides open access to NASA’s space biology data including GeneLab and the Ames Life Sciences Data Archive (ALSDA). 
 **Approach**
 Leverage trusted and curated NASA SMD resources from the Science Discovery Engine (SDE) index in order to create a topical chatbot focused on the OSDR. 
