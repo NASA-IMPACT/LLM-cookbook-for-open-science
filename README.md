@@ -8,6 +8,7 @@ From a scientific perspective, the motivation behind leveraging large language m
 
 ### Goal for this Tutorial
 
+[LLMs-levels-in-science](/data/images/llm-use-in-smd.png)
 This tutorial aims to embrace the integration of AI, particularly LLMs, within the Science Mission Directorate's purview, fostering a culture of responsible and ethical AI usage. This culture involves critically examining the limitations inherent to AI and LLMs and the proactive establishment and implementation of ethical guidelines and guardrails to mitigate potential risks.
 
 The tutorial aims to catalyze knowledge sharing and collaboration among scientists and researchers within NASA SMD, enabling them to leverage LLMs more effectively.
