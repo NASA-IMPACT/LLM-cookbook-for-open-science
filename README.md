@@ -698,7 +698,8 @@ Model Selection:
 
 - Optimizers: Use adaptive learning rate optimizers like AdamW, which are generally more effective for fine-tuning.
 Gradual Unfreezing: Gradually unfreeze the pre-trained layers while fine-tuning to allow the model to adapt more effectively.
-Evaluation Metrics:
+
+**Evaluation Metrics**:
 
 - Domain-Specific Metrics: Use evaluation metrics that are most relevant to your specific application or domain for a more accurate assessment of performance.
 
