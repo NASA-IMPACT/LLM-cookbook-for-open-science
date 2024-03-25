@@ -663,7 +663,7 @@ Fine tuning a language model is the process of training a pre-trained language m
 
 An encoder LLM model is fine-tuned by connecting task-specific layers to the pre-trained model and training the entire model on a task-specific dataset. This process is best suited for tasks that require the model to generate structured outputs based on the input, such as text classification, named entity recognition, and text summarization. These models are best performing when they are used as part of a larger pipeline, where the model's output is used as input to another model or system. e.g. sentence transformer, text classification, named entity recognition, text summarization.
 
-[Notebook Example](/notebooks/EJ_Classify.ipynb)
+[Notebook Example](/notebooks/EJ_classify.ipynb)
 
 ### Fine Tuning a Decoder Model
 
