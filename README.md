@@ -584,8 +584,6 @@ The goals of this activity are to teach developers to create applications using 
 Both Earth scientists and astrophysicists need to complete advanced spatiotemporal searches to find focused data or observations. Earth scientists search for data about a specific phenomenon in a certain region over a specific period of time. For example, I want to find ozone data in the Los Angeles area in the year 2005. Astrophysicists search for data or observations about or around a specific object in space. For example, I want to find data within 1 arcminute of the Southern Ring nebula. Users new to astrophysics may want to know the cross identifications of an object in space while advanced users may want to search for publications about an object using associated bibcodes.
 
 For Earth science searches, we will use the [Common Metadata Repository (CMR)](https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html) to search for data. For astrophysics searches, we will use several services from [Astroquery](https://astroquery.readthedocs.io/en/latest/) (SIMBAD, ADS, etc…) to search for data and information.
-- [Example 1: CMR Agent](/notebooks/langchain-react-cmr.ipynb)
-- [Example 2: Astro Agent](notebooks/langchain-react-astro.ipynb)
 
 ## Approach
 
@@ -606,6 +604,10 @@ For data stewards, these advanced search capabilities will increase data utiliza
 ## Background Information
 
 LangChain is an open-source framework for building applications based on large language models (LLMs). It provides tools to help LLMs generate more accurate and relevant information by chaining together models, prompt patterns, and information stores to optimize the generation process. Langchain is the underlying framework that powers Langflow/promptlab and is designed to be used by developers as a standalone tool for building and deploying AI applications.
+
+## Examples
+- [Example 1: CMR Agent](/notebooks/langchain-react-cmr.ipynb)
+- [Example 2: Astro Agent](notebooks/langchain-react-astro.ipynb)
 
 # Fine-Tuning the NASA SMD Encoder Model
 
