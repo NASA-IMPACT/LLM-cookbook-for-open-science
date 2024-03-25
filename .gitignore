@@ -5,3 +5,4 @@ cache
 venv/
 tmp/
 .python-version
+data/osdr-eval/
