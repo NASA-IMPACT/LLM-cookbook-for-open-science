@@ -72,6 +72,8 @@
   - [Value](#value-1)
   - [Implementation Steps](#implementation-steps-1)
   - [Background Information](#background-information-1)
+  - [Examples](#examples)
+  - [Best Practices](#best-practices)
 - [Fine-Tuning the NASA SMD Encoder Model](#fine-tuning-the-nasa-smd-encoder-model)
   - [Goal](#goal)
   - [Approach](#approach-2)
@@ -80,6 +82,7 @@
   - [Background Information](#background-information-2)
     - [Fine Tuning an Encoder Model](#fine-tuning-an-encoder-model)
     - [Fine Tuning a Decoder Model](#fine-tuning-a-decoder-model)
+  - [Best Practices](#best-practices-1)
 
 
 # Introduction
@@ -667,3 +670,39 @@ An encoder LLM model is fine-tuned by connecting task-specific layers to the pre
 A decoder LLM model is fine-tuned by providing the model with task-specific examples and training it to generate outputs that are relevant to the task. This process is best suited for tasks that require the model to generate free-form text based on the input, such as question answering, text generation, and dialogue systems and function calling. These models are best performing when they are used as standalone systems, where the model's output is the final output of the system. while fine tuning the decoder model end-to-end is prohibitively expensive and destroys the connections learned during pre-training, it is possible to fine-tune the model using low-rank adaptation (LoRA) techniques, in which only a small subset of the model's parameters are updated during training, there-by reducing the computational cost of fine-tuning the model, as well as preserving the model's original capabilities.
 
 [Notebook Example](/notebooks/EJ_extractions.ipynb)
+
+## Best Practices
+
+**Data Preparation:**
+
+- Quality Over Quantity: Focus on high-quality, labeled data. Clean and preprocess the data thoroughly.
+Data Augmentation: Use techniques like noise injection, cropping, or synthetic data generation to enhance diversity and robustness.
+Model Selection:
+
+- Right-Sized Models: Choose a model architecture appropriate for your dataset size and complexity to avoid overfitting or underfitting.
+
+**Fine-Tuning Strategy:**
+
+- Layer-wise Fine-Tuning: Start by fine-tuning the last few layers before gradually unfreezing earlier layers, as they contain more generic features.
+- Learning Rate: Use a smaller learning rate for fine-tuning to prevent catastrophic forgetting of the pre-trained knowledge.
+- Early Stopping: Monitor validation loss and stop training when it begins to increase, using checkpoints to save the best model.
+
+**Regularization Techniques:**
+
+- Dropout: Apply dropout in fully connected layers to prevent overfitting.
+- Weight Decay: Use L2 regularization to penalize large weights and prevent overfitting.
+- Batch Normalization: Normalize activations to stabilize training and improve generalization.
+- Data Augmentation: Use NLP techniques like back-translation, paraphrasing, or word masking to augment the training data.
+
+**Optimization:**
+
+- Optimizers: Use adaptive learning rate optimizers like AdamW, which are generally more effective for fine-tuning.
+Gradual Unfreezing: Gradually unfreeze the pre-trained layers while fine-tuning to allow the model to adapt more effectively.
+Evaluation Metrics:
+
+- Domain-Specific Metrics: Use evaluation metrics that are most relevant to your specific application or domain for a more accurate assessment of performance.
+
+**Experiment Tracking:**
+
+- Version Control for Data and Models: Use tools like DVC (Data Version Control) to track data, models, and experiments efficiently.
+- Experiment Management Tools: Utilize tools like MLflow or Weights & Biases to log experiments, track progress, and compare results.
