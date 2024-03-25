@@ -609,6 +609,22 @@ LangChain is an open-source framework for building applications based on large l
 - [Example 1: CMR Agent](/notebooks/langchain-react-cmr.ipynb)
 - [Example 2: Astro Agent](notebooks/langchain-react-astro.ipynb)
 
+## Best Practices
+
+- Use Langchain to control and regulate data flow. Chains can be used to “chain” multiple steps to build personalized responses. Create chains for each logically seperable process. 
+- Simplify the agent workflow as much as one can. Multiple agents can be used if needed
+- Use Openly available models using Langchain’s Huggingface e.g. Mixtral, Microsoft PHI-2
+- Ways to use Huggingface within Langchain Ecosystem
+  - LLMs using from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
+  - Embedding Models using from langchain_community.embeddings import HuggingFaceEmbeddings
+  - Huggingface datasets using from langchain_community.document_loaders.hugging_face_dataset import HuggingFaceDatasetLoader
+- Langchain enables users to easily switch between Openai Models, Vertex AI (gemini), Azure models, AWS bedrock, Huggingface (open) models. test your app with all versions of models to optimize performance and cost to infer
+- When making langchain apps opensource, follow general best practices that would apply for any software deployment.
+  - e.g.: Handling API keys safely, scalability of deployment
+- Always assume your chain will break and agent will hallucinate. incorporate fallback mechanisms in case of failure, and temper user expectations.
+- Langserve is an extension within langchain that can be used to deploy apps as a RESTFul service
+- Langsmith is a tool developed by langchain devs to debug and evaluate langchain chains and agents.
+
 # Fine-Tuning the NASA SMD Encoder Model
 
 ## Goal
